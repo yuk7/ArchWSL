@@ -53,6 +53,8 @@ script:
 - cd out
 - zip Arch.zip *
 - cd ..
+notifications:
+  email: false
 deploy:
   provider: releases
   api_key:
