@@ -60,3 +60,6 @@ deploy:
   file: out/Arch.zip
   on:
     repo: yuk7/ArchWSL
+    tags: true
+    all_branches: true
+skip_cleanup: true
