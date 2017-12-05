@@ -8,12 +8,12 @@ ArchLinux on WSL (Windows 10 FCU or later)
 
 ### [Download](https://github.com/yuk7/ArchWSL/releases/latest)
 
-## Install with prebuilt rootfs
+## Install
 #### 1. Download installer zip
 
 #### 2. Extract all files in zip file to same directory
 
-#### 3.Run exe to Extract rootfs and Register to WSL
+#### 3.Run Arch.exe to Extract rootfs and Register to WSL
 Exe filename is using to the instance name to register.
 If you rename it you can register with a diffrent name.
 
