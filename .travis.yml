@@ -27,9 +27,7 @@ script:
 - sudo mount -t proc proc proc/
 - sudo mount --bind /sys sys
 - 
-- sudo chroot . /usr/bin/pacman -Syu --noconfirm bzip2 coreutils diffutils gawk gcc-libs
-  gettext grep gzip inetutils iproute2 iputils less man-db man-pages nano sed sudo tar
-  vi vim wget which
+- sudo chroot . /usr/bin/pacman -Syu --noconfirm ${PAC_PKGS}
 - sudo chmod u+s ./usr/bin/ping
 - sudo rm -rf ./etc/mtab
 - echo "rootfs / rootfs rw 0 0" | sudo tee ./etc/mtab
