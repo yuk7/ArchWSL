@@ -28,7 +28,7 @@ script:
 - sudo mount --bind /sys sys
 - 
 - sudo chroot . /usr/sbin/pacman -Syu --noconfirm bzip2 coreutils diffutils gawk gcc-libs
-  gettext grep gzip inetutils iproute2 iputils less man-db man-pages nano sed tar
+  gettext grep gzip inetutils iproute2 iputils less man-db man-pages nano sed sudo tar
   vi vim wget which
 - sudo rm -rf ./etc/mtab
 - echo "rootfs / rootfs rw 0 0" | sudo tee ./etc/mtab
