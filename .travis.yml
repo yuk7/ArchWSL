@@ -27,15 +27,15 @@ script:
 - sudo mount -t proc proc proc/
 - sudo mount --bind /sys sys
 - 
-- sudo chroot . /usr/sbin/pacman -Syu --noconfirm bzip2 coreutils diffutils gawk gcc-libs
+- sudo chroot . /usr/bin/pacman -Syu --noconfirm bzip2 coreutils diffutils gawk gcc-libs
   gettext grep gzip inetutils iproute2 iputils less man-db man-pages nano sed sudo tar
   vi vim wget which
 - sudo rm -rf ./etc/mtab
 - echo "rootfs / rootfs rw 0 0" | sudo tee ./etc/mtab
-- sudo chroot . /usr/sbin/locale-gen
-- yes | sudo chroot . /usr/sbin/pacman -U --force  /root/${GLIBC_FN}
-- yes | sudo chroot . /usr/sbin/pacman -U --force /root/${FRTCP_FN}
-- yes | sudo chroot . /usr/sbin/pacman -Scc
+- sudo chroot . /usr/bin/locale-gen
+- yes | sudo chroot . /usr/bin/pacman -U --force  /root/${GLIBC_FN}
+- yes | sudo chroot . /usr/bin/pacman -U --force /root/${FRTCP_FN}
+- yes | sudo chroot . /usr/bin/pacman -Scc
 - 
 - sudo umount ./{sys,proc}
 - sudo mv -f ./etc/mtab.bak ./etc/mtab
