@@ -7,7 +7,6 @@ before_script:
 script:
 - source ./env.sh
 - "${DLR} ${ROOTFS_URL} -o ${ROOTFS_FN}"
-- "${DLR} ${GLIBC_URL} -o ${GLIBC_FN}"
 - "${DLR} ${FRTCP_URL} -o ${FRTCP_FN}"
 - "${DLR} ${LNCR_URL} -o ${LNCR_ZIP}"
 - 
@@ -19,7 +18,7 @@ script:
 - sudo cp -bf ../pacman.conf.nosig ./etc/pacman.conf
 - sudo sed -i -e "s/#en_US.UTF-8/en_US.UTF-8/" ./etc/locale.gen
 - echo "LANG=en_US.UTF-8" | sudo tee ./etc/locale.conf
-- sudo cp -f ../${GLIBC_FN} ../${FRTCP_FN} ./root/
+- sudo cp -f ../${FRTCP_FN} ./root/
 - sudo cp -f /etc/resolv.conf ./etc/resolv.conf
 - sudo mv -f ./etc/mtab ./etc/mtab.bak
 - echo "rootfs / rootfs rw 0 0" | sudo tee ./etc/mtab
@@ -32,7 +31,6 @@ script:
 - sudo rm -rf ./etc/mtab
 - echo "rootfs / rootfs rw 0 0" | sudo tee ./etc/mtab
 - sudo chroot . /usr/bin/locale-gen
-- yes | sudo chroot . /usr/bin/pacman -U --force  /root/${GLIBC_FN}
 - yes | sudo chroot . /usr/bin/pacman -U --force /root/${FRTCP_FN}
 - yes | sudo chroot . /usr/bin/pacman -Scc
 - 

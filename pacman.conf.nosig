@@ -23,7 +23,7 @@ HoldPkg     = pacman glibc
 Architecture = auto
 
 # Pacman won't upgrade packages listed in IgnorePkg and members of IgnoreGroup
-IgnorePkg   = glibc fakeroot
+IgnorePkg   = fakeroot
 #IgnoreGroup =
 
 #NoUpgrade   =
