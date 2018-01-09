@@ -8,8 +8,13 @@ ArchLinux on WSL (Windows 10 FCU or later)
 
 ### [Download](https://github.com/yuk7/ArchWSL/releases/latest)
 
+
+## Requirements
+* Windows 10 1709 Fall Creators Update 64bit or later.
+* Windows Subsystem for Linux feature is enabled.
+
 ## Install
-#### 1. Download installer zip
+#### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip
 
 #### 2. Extract all files in zip file to same directory
 
