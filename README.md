@@ -84,6 +84,7 @@ Useage :
 >Arch.exe
 [user@PC-NAME dir]$
 ```
+If the default user has not been changed, please reboot the computer.(issue [#7](https://github.com/yuk7/ArchWSL/issues/7))
 
 
 #### How to uninstall instance
