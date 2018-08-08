@@ -1,8 +1,9 @@
 # ArchWSL
 ArchLinux on WSL (Windows 10 FCU or later)
+based on [wsldl](https://github.com/yuk7/wsldl)
 
 
-![screenshot](https://raw.githubusercontent.com/wiki/yuk7/WSL-DistroLauncher/img/Arch_Alpine_Ubuntu.png)
+![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
 
 [![Build Status](https://img.shields.io/travis/yuk7/ArchWSL.svg?style=flat-square)](https://travis-ci.org/yuk7/ArchWSL)
 [![Github All Releases](https://img.shields.io/github/downloads/yuk7/ArchWSL/total.svg?style=flat-square)](https://github.com/yuk7/ArchWSL/releases/latest)
