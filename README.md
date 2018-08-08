@@ -6,6 +6,8 @@ ArchLinux on WSL (Windows 10 FCU or later)
 
 [![Build Status](https://img.shields.io/travis/yuk7/ArchWSL.svg?style=flat-square)](https://travis-ci.org/yuk7/ArchWSL)
 [![Github All Releases](https://img.shields.io/github/downloads/yuk7/ArchWSL/total.svg?style=flat-square)](https://github.com/yuk7/ArchWSL/releases/latest)
+![License](https://img.shields.io/github/license/yuk7/ArchWSL.svg?style=flat-square)
+
 
 ### [Download](https://github.com/yuk7/ArchWSL/releases/latest) | [Wiki](https://github.com/yuk7/ArchWSL/wiki)
 
