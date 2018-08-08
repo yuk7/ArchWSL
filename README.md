@@ -7,8 +7,7 @@ ArchLinux on WSL (Windows 10 FCU or later)
 [![Build Status](https://img.shields.io/travis/yuk7/ArchWSL.svg?style=flat-square)](https://travis-ci.org/yuk7/ArchWSL)
 [![Github All Releases](https://img.shields.io/github/downloads/yuk7/ArchWSL/total.svg?style=flat-square)](https://github.com/yuk7/ArchWSL/releases/latest)
 
-### [Download](https://github.com/yuk7/ArchWSL/releases/latest)
-
+### [Download](https://github.com/yuk7/ArchWSL/releases/latest) | [Wiki](https://github.com/yuk7/ArchWSL/wiki)
 
 ## Requirements
 * Windows 10 1709 Fall Creators Update 64bit or later.
@@ -62,3 +61,6 @@ Useage :
     help
       - Print this usage message.
 ```
+
+## Known issues
+Please see [Wiki](https://github.com/yuk7/ArchWSL/wiki).
