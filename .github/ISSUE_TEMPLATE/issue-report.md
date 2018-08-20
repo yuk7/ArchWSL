@@ -1,0 +1,26 @@
+---
+name: Issue report
+about: Create a report to help us improve
+
+---
+
+**Please fill out the below information:**
+**Describe the issue**
+A clear and concise description of what the bug is.
+
+**To Reproduce**
+Steps to reproduce the behavior:
+
+**Expected behavior**
+A clear and concise description of what you expected to happen.
+
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
+
+**Enviroment:**
+ - Windows build number: [e.g. 10.0.17134.228] (Type `ver` at a Command Prompt)
+ - ArchWSL version [e.g. 18081100] (version of zip)
+ - Launcher version [e.g. 18080900] (Type `Arch.exe version` at a Command Prompt)
+
+**Additional context**
+Add any other context about the problem here.
