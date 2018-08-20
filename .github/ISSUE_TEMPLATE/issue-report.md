@@ -4,6 +4,9 @@ about: Create a report to help us improve
 
 ---
 
+**IMPORTANT**
+Please read [README](https://github.com/yuk7/ArchWSL/blob/master/README.md) and [Known issues](https://github.com/yuk7/ArchWSL/wiki/Known-issues) before creating the issue.
+
 **Please fill out the below information:**
 **Describe the issue**
 A clear and concise description of what the bug is.
