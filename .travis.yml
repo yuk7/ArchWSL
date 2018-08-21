@@ -7,12 +7,12 @@ before_script:
 - sudo apt-get install aria2 zip unzip check -qq
 script:
 - source ./env.sh
-- "${DLR} ${ROOTFS_URL} -o ${ROOTFS_FN}"
+- "${DLR} ${BASE_URL} -o ${BASE_FN}"
 - "${DLR} ${FRTCP_URL} -o ${FRTCP_FN}"
 - "${DLR} ${LNCR_URL} -o ${LNCR_ZIP}"
 - 
 - unzip ${LNCR_ZIP} ${LNCR_FN}
-- sudo tar -zxpf ${ROOTFS_FN}
+- sudo tar -zxpf ${BASE_FN}
 - cd root.x86_64
 - sudo cp -f ../profile ./etc/profile
 - sudo cp -bf ../mirrorlist ./etc/pacman.d/mirrorlist
