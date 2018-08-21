@@ -14,7 +14,6 @@ script:
 - unzip ${LNCR_ZIP} ${LNCR_FN}
 - sudo tar -zxpf ${ROOTFS_FN}
 - cd root.x86_64
-- sudo cp -f ../profile ./etc/profile
 - sudo cp -bf ../mirrorlist ./etc/pacman.d/mirrorlist
 - sudo cp -bf ../pacman.conf.nosig ./etc/pacman.conf
 - sudo sed -i -e "s/#en_US.UTF-8/en_US.UTF-8/" ./etc/locale.gen
