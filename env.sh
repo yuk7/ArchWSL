@@ -1,9 +1,9 @@
 #!/bin/bash
 
 ARCH="x86_64"
-BASE_VER="2018.08.01"
-BASE_FN="archlinux-bootstrap-${BASE_VER}-${ARCH}.tar.gz"
-BASE_URL="http://mirrors.kernel.org/archlinux/iso/${BASE_VER}/${ROOTFS_FN}"
+ROOTFS_VER="2018.08.01"
+ROOTFS_FN="archlinux-bootstrap-${ROOTFS_VER}-${ARCH}.tar.gz"
+ROOTFS_URL="http://mirrors.kernel.org/archlinux/iso/${ROOTFS_VER}/${ROOTFS_FN}"
 
 FRTCP_BLD="18082100"
 FRTCP_VER="1.23-1"
