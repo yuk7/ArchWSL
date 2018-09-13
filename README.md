@@ -24,12 +24,13 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 Please extract to a folder that has write permission.
 For example 'Program Files' can not be used.
 
-#### 3.Run Arch.exe to Extract rootfs and Register to WSL
+#### 3. Run Arch.exe to Extract rootfs and Register to WSL
 Exe filename is using to the instance name to register.
 If you rename it you can register with a diffrent name.
 
+  **Note:** _Source code for Arch.exe can be found in [yuk7/wsldl](https://github.com/yuk7/wsldl)._
 
-#### 4. before use pacman,please initialize keyring.
+#### 4. Before using pacman, please initialize keyring
 ```dos
 >Arch.exe
 [root@PC-NAME user]# pacman-key --init
@@ -62,7 +63,7 @@ Useage :
       - `--lxuid`: Get LxUID key for this distro
 
     clean
-     - Uninstalls the distro.
+      - Uninstalls the distro.
 
     help
       - Print this usage message.
