@@ -7,10 +7,10 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 
 [![Build Status](https://img.shields.io/travis/hdk5/ArtixWSL.svg)](https://travis-ci.org/hdk5/ArtixWSL)
 [![Github All Releases](https://img.shields.io/github/downloads/hdk5/ArtixWSL/total.svg)](https://github.com/hdk5/ArtixWSL/releases/latest)
-[![License](https://img.shields.io/github/license/yuk7/ArtixWSL.svg)](https://choosealicense.com/licenses/mit/)
+[![License](https://img.shields.io/github/license/hdk5/ArtixWSL.svg)](https://choosealicense.com/licenses/mit/)
 
 
-### [Download](https://github.com/yuk7/ArchWSL/releases/latest) | [Wiki](https://github.com/yuk7/ArchWSL/wiki)
+### [Download](https://github.com/hdk5/ArtixWSL/releases/latest) | [Wiki](https://github.com/hdk5/ArtixWSL/wiki)
 
 ## Requirements
 * Windows 10 1709 Fall Creators Update 64bit or later.
@@ -23,11 +23,11 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 Please extract to a folder that has write permission.
 For example 'Program Files' can not be used.
 
-#### 3. Run Arch.exe to Extract rootfs and Register to WSL
+#### 3. Run Artix.exe to Extract rootfs and Register to WSL
 Exe filename is using to the instance name to register.
 If you rename it you can register with a diffrent name.
 
-  **Note:** _Source code for Arch.exe can be found in [yuk7/wsldl](https://github.com/yuk7/wsldl)._
+  **Note:** _Source code for Artix.exe can be found in [yuk7/wsldl](https://github.com/yuk7/wsldl)._
 
 #### 4. Before using pacman, please initialize keyring
 ```console
@@ -39,7 +39,7 @@ If you rename it you can register with a diffrent name.
 ## How-to-Use(for Installed Instance)
 #### exe Usage
 ```console
-$ Arch.exe help
+$ Artix.exe help
 Useage :
     <no args>
       - Launches the distro's default behavior. By default, this launches your default shell.
@@ -67,4 +67,4 @@ Useage :
 ```
 
 ## Known issues
-Please see [Wiki](https://github.com/yuk7/ArchWSL/wiki).
+Please see [Wiki](https://github.com/hdk5/ArtixWSL/wiki).
