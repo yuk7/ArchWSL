@@ -1,14 +1,13 @@
-# ArchWSL
-ArchLinux on WSL (Windows 10 FCU or later)
+# ArtixWSL
+Artix Linux on WSL (Windows 10 FCU or later)
 based on [wsldl](https://github.com/yuk7/wsldl)
 
 
 ![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
 
-[![Build Status](https://img.shields.io/travis/yuk7/ArchWSL.svg?style=flat-square)](https://travis-ci.org/yuk7/ArchWSL)
-[![Github All Releases](https://img.shields.io/github/downloads/yuk7/ArchWSL/total.svg?style=flat-square)](https://github.com/yuk7/ArchWSL/releases/latest)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-![License](https://img.shields.io/github/license/yuk7/ArchWSL.svg?style=flat-square)
+[![Build Status](https://img.shields.io/travis/hdk5/ArtixWSL.svg)](https://travis-ci.org/hdk5/ArtixWSL)
+[![Github All Releases](https://img.shields.io/github/downloads/hdk5/ArtixWSL/total.svg)](https://github.com/hdk5/ArtixWSL/releases/latest)
+[![License](https://img.shields.io/github/license/yuk7/ArtixWSL.svg)](https://choosealicense.com/licenses/mit/)
 
 
 ### [Download](https://github.com/yuk7/ArchWSL/releases/latest) | [Wiki](https://github.com/yuk7/ArchWSL/wiki)
@@ -18,7 +17,7 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 * Windows Subsystem for Linux feature is enabled.
 
 ## Install
-#### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip
+#### 1. [Download](https://github.com/hdk5/ArtixWSL/releases/latest) installer zip
 
 #### 2. Extract all files in zip file to same directory
 Please extract to a folder that has write permission.
@@ -31,24 +30,22 @@ If you rename it you can register with a diffrent name.
   **Note:** _Source code for Arch.exe can be found in [yuk7/wsldl](https://github.com/yuk7/wsldl)._
 
 #### 4. Before using pacman, please initialize keyring
-```dos
->Arch.exe
-[root@PC-NAME user]# pacman-key --init
-
-[root@PC-NAME user]# pacman-key --populate
-
+```console
+# pacman-key --init
+# pacman-key --populate
 ```
 
 
 ## How-to-Use(for Installed Instance)
 #### exe Usage
-```dos
+```console
+$ Arch.exe help
 Useage :
     <no args>
       - Launches the distro's default behavior. By default, this launches your default shell.
 
     run <command line>
-      - Run the given command line in that distro.
+      - Run the given command line in that distro. Inherit current directory.
 
     config [setting [value]]
       - `--default-user <user>`: Set the default user for this distro to <user>
@@ -63,7 +60,7 @@ Useage :
       - `--lxuid`: Get LxUID key for this distro
 
     clean
-      - Uninstalls the distro.
+     - Uninstalls the distro.
 
     help
       - Print this usage message.
