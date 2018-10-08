@@ -8,8 +8,9 @@ curl -L ${LNCR_URL} -o ${LNCR_ZIP}
 
 unzip ${LNCR_ZIP} ${LNCR_FN}
 
-7z e ${ISO_FN} artix/${ARCH}/rootfs.sfs
-unsquashfs -d rootfs ./rootfs.sfs
+mkdir isofs
+mount -t iso9660 -o loop,ro ${ISO_FN} isofs
+unsquashfs -d rootfs ./isofs/artix/${ARCH}/rootfs.sfs
 
 mount --bind rootfs rootfs
 mount -t proc none rootfs/proc

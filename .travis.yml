@@ -5,7 +5,6 @@ addons:
   apt:
     update: true
     packages:
-    - p7zip-full
     - squashfs-tools
 script:
 - sudo ./build.sh
