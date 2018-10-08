@@ -10,6 +10,8 @@ script:
 - sudo ./build.sh
 notifications:
   email: false
+before_deploy:
+- git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
   provider: releases
   api_key:
