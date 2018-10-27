@@ -39,5 +39,4 @@ umount rootfs/proc
 umount rootfs
 
 tar zcpf rootfs.tar.gz -C rootfs .
-mv ${LNCR_FN} Artix.exe
-zip Artix.zip Artix.exe rootfs.tar.gz
+zip Artix.zip ${LNCR_FN} rootfs.tar.gz
