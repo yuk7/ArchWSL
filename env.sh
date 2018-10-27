@@ -12,5 +12,5 @@ FRTCP_URL="https://github.com/yuk7/arch-prebuilt/releases/download/${FRTCP_BLD}/
 
 LNCR_BLD="18102700"
 LNCR_ZIP="icons.zip"
-LNCR_FN="Arch.exe"
+LNCR_FN="Artix.exe"
 LNCR_URL="https://github.com/yuk7/wsldl/releases/download/${LNCR_BLD}/${LNCR_ZIP}"
