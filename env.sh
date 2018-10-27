@@ -14,3 +14,5 @@ LNCR_BLD="18100300"
 LNCR_ZIP="icons.zip"
 LNCR_FN="Arch.exe"
 LNCR_URL="https://github.com/yuk7/wsldl/releases/download/${LNCR_BLD}/${LNCR_ZIP}"
+
+PAC_PKGS="bash bzip2 coreutils diffutils file filesystem findutils gawk gcc-libs gettext glibc grep gzip inetutils iproute2 iputils less licenses logrotate man-db man-pages vim pacman psmisc sed shadow sysfsutils tar util-linux which runit"
