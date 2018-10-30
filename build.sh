@@ -47,4 +47,4 @@ To stop automatic generation of this file, remove this line." > rootfs/etc/resol
 rm -f rootfs/root/${FRTCP_FN}
 
 tar zcpf rootfs.tar.gz -C rootfs .
-zip Artix.zip ${LNCR_FN} rootfs.tar.gz
+zip Artix.zip ${LNCR_FN} rootfs.tar.gz runsvdir.ps1
