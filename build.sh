@@ -1,5 +1,4 @@
-#!/bin/bash
-set -x
+#!/bin/bash -x
 
 source ./env.sh
 
@@ -29,7 +28,7 @@ mkdir rootfs
 mount --bind rootfs rootfs
 mount --bind rootfs livefs/mnt
 
-cat <<EOF | chroot livefs /bin/bash -
+cat <<EOF | chroot livefs /bin/bash -x -
 basestrap -G -M -c /mnt ${PAC_PKGS}
 EOF
 
@@ -38,7 +37,7 @@ sed -i -e "s/#en_US.UTF-8/en_US.UTF-8/" rootfs/etc/locale.gen
 sed -i -e "s/#IgnorePkg   =/IgnorePkg   = fakeroot/" rootfs/etc/pacman.conf
 cp ${FRTCP_FN} rootfs/root/
 
-cat <<EOF | chroot livefs artools-chroot /mnt /bin/bash -
+cat <<EOF | chroot livefs artools-chroot /mnt /bin/bash -x -
 locale-gen
 pacman -U /root/${FRTCP_FN} --noconfirm
 EOF

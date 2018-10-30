@@ -18,5 +18,6 @@ deploy:
     secure: fMxHqE1MdminP+nTDXDp/M904eR61ahCz8LrOVHNpo+mWzrUTJXk7Y2aSBjb+DSUajChEuFjQLIcBv0crDsi1yVzdfx37nx4ZZXm8A+3jRgQg8Y8QtBiGYkb/Bxxn3EdByT2O8D1w/Nm9Oo2K9xw/3cDP6kpwx+RJrDVRaHNdXyz1erOycUbPVVkne0yclPlvotkUkANF7H4qcsPL2wvylq/09gWEgmSe0p+Mz+8ZJ5A5jZMirqfZU3TNWOWJdoZ4kujV5XPqEKiN+No7gfdPA+ETGZsTliWA3EOW6TBhDf/+NFKQ6XcgyyWZPNpM+V4fHN/vUwaUDrw/epxBl+FUVNgajkUENPB5i8lQB6YDEZgCkut55knDcd78JdZF1shltceb0G97dPtinftFZmuOvYeGjjrY4O6cr/oV/4ji48SeVxPOIybTwZk9A0SjjRAwP5pbP/kyJJAmTvQsyr5ek63WKa2MOdQM4K/O7KyLgIVi4zY4wknjzOgmJn3Wrp1hc2STf7pz7jb+fGwG/8xCFVrxhwGHnKj+napCDF7G90c5XGJniE7ymAbs1aTl39FSEs7o2jIlrv8OW7Z8CHiYsohpmBtdkgjP5am0rzztGQZX4N5F/rn2DHmEwnicsGbLmusj6UT1fvEzkUpxr4wP3ymVtPltZSG7yv50v2BB48=
   file: Artix.zip
   skip_cleanup: true
+  overwrite: true
   on:
     repo: hdk5/ArtixWSL
