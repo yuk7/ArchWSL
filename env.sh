@@ -3,7 +3,7 @@ ISO_VER="20180604"
 ISO_ED="base"
 ISO_INIT="runit"
 ISO_FN="artix-${ISO_ED}-${ISO_INIT}-${ISO_VER}-${ARCH}.iso"
-ISO_URL="https://mirrors.dotsrc.org/artix-linux/iso/${ISO_ED}/${ISO_FN}"
+ISO_URL="https://mirrors.dotsrc.org/artix-linux/iso/${ISO_FN}"
 
 FRTCP_BLD="18082100"
 FRTCP_VER="1.23-1"
