@@ -1,5 +1,9 @@
 #!/bin/bash -x
 
+# Warning: this script is not supposed to be run on real system,
+# as it will clean up after itself.
+# Use it only in ephemeral environments, such as Travis CI.
+
 source ./env.sh
 
 curl -L ${ISO_URL} -o ${ISO_FN}
