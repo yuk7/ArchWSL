@@ -24,7 +24,7 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 Please extract to a folder that has write permission.
 For example 'Program Files' can not be used.
 
-#### 3. Run Arch.exe to Extract rootfs and Register to WSL
+#### 3. Run Arch.exe as Administrator to Extract rootfs and Register to WSL
 Exe filename is using to the instance name to register.
 If you rename it you can register with a diffrent name and have multiple installs.
 
