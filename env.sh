@@ -10,7 +10,7 @@ FRTCP_VER="1.23-1"
 FRTCP_FN="fakeroot-tcp-${FRTCP_VER}-${ARCH}.pkg.tar.xz"
 FRTCP_URL="https://github.com/yuk7/arch-prebuilt/releases/download/${FRTCP_BLD}/${FRTCP_FN}"
 
-LNCR_BLD="18102701"
+LNCR_BLD="18122700"
 LNCR_ZIP="icons.zip"
 LNCR_FN="Artix.exe"
 LNCR_URL="https://github.com/yuk7/wsldl/releases/download/${LNCR_BLD}/${LNCR_ZIP}"
