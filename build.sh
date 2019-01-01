@@ -34,6 +34,7 @@ mount --bind rootfs rootfs
 mount --bind rootfs livefs/mnt
 
 cat <<EOF | chroot livefs /bin/bash -x -
+pacman -Sy archlinux-keyring --noconfirm
 basestrap -G -M -c /mnt ${PAC_PKGS}
 EOF
 
