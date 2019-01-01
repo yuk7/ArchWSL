@@ -5,6 +5,7 @@
 # Use it only in ephemeral environments, such as Travis CI.
 
 source ./env.sh
+trap "exit 1" ERR
 
 curl -L ${ISO_URL} -o ${ISO_FN}
 curl -L ${FRTCP_URL} -o ${FRTCP_FN}
