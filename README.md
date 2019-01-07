@@ -26,7 +26,7 @@ For example 'Program Files' can not be used.
 
 #### 3. Run Arch.exe to Extract rootfs and Register to WSL
 Exe filename is using to the instance name to register.
-If you rename it you can register with a diffrent name and have multiple installs.
+If you rename it you can register with a different name and have multiple installs.
 
   **Note:** _Source code for Arch.exe can be found in [yuk7/wsldl](https://github.com/yuk7/wsldl)._
 
