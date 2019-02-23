@@ -9,16 +9,16 @@
   IgnorableNamespaces="uap uap3 mp rescap desktop">
 
   <Identity
-    Name="d424f6bb-a05f-433a-bad2-e23cead9e57f"
+    Name="yuk7.archwsl"
     Version="1.0.0.0"
-    Publisher="CN=user"
+    Publisher="CN=yuk7"
     ProcessorArchitecture="x64"/>
 
-  <mp:PhoneIdentity PhoneProductId="d424f6bb-a05f-433a-bad2-e23cead9e57f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <mp:PhoneIdentity PhoneProductId="0b93f8be-b737-48da-8d01-63ac27829cb0" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
 
   <Properties>
-    <DisplayName>wsldl-AppX</DisplayName>
-    <PublisherDisplayName>user</PublisherDisplayName>
+    <DisplayName>ArchWSL</DisplayName>
+    <PublisherDisplayName>yuk7</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
 
@@ -36,13 +36,13 @@
 
   <Applications>
     <Application 
-      Id="wsldl"
-      Executable="Launcher.exe"
+      Id="archwsl"
+      Executable="Arch.exe"
       EntryPoint="Windows.FullTrustApplication">
 
       <uap:VisualElements
-        DisplayName="wsldl-AppX"
-        Description="wsldl-AppX"
+        DisplayName="Arch"
+        Description="ArchWSL - ArchLinux on WSL"
         BackgroundColor="transparent"
         Square150x150Logo="images\Square150x150Logo.png"
         Square44x44Logo="images\Square44x44Logo.png">
@@ -53,9 +53,9 @@
       </uap:VisualElements>
 
       <Extensions>
-        <uap3:Extension Category="windows.appExecutionAlias" Executable="Launcher.exe" EntryPoint="Windows.FullTrustApplication">
+        <uap3:Extension Category="windows.appExecutionAlias" Executable="Arch.exe" EntryPoint="Windows.FullTrustApplication">
           <uap3:AppExecutionAlias>
-            <desktop:ExecutionAlias Alias="Launcher.exe" />
+            <desktop:ExecutionAlias Alias="Arch.exe" />
           </uap3:AppExecutionAlias>
         </uap3:Extension>
       </Extensions>
