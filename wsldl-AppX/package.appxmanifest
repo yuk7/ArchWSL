@@ -3,8 +3,10 @@
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+  xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
-  IgnorableNamespaces="uap mp rescap">
+  IgnorableNamespaces="uap uap3 mp rescap desktop">
 
   <Identity
     Name="d424f6bb-a05f-433a-bad2-e23cead9e57f"
@@ -49,6 +51,15 @@
         <uap:SplashScreen Image="images\splashscreen.png" />
 
       </uap:VisualElements>
+
+      <Extensions>
+        <uap3:Extension Category="windows.appExecutionAlias" Executable="Launcher.exe" EntryPoint="Windows.FullTrustApplication">
+          <uap3:AppExecutionAlias>
+            <desktop:ExecutionAlias Alias="Launcher.exe" />
+          </uap3:AppExecutionAlias>
+        </uap3:Extension>
+      </Extensions>
+
     </Application>
   </Applications>
 
