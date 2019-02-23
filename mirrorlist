@@ -1,6 +1,6 @@
 ##
 ## Arch Linux repository mirrorlist
-## Generated on 2018-12-05
+## Generated on 2019-01-09
 ##
 
 ## Worldwide
@@ -37,7 +37,6 @@
 #Server = http://archlinux.mirror.ba/$repo/os/$arch
 
 ## Brazil
-#Server = http://br.mirror.archlinux-br.org/$repo/os/$arch
 #Server = http://archlinux.c3sl.ufpr.br/$repo/os/$arch
 #Server = http://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch
 #Server = https://www.caco.ic.unicamp.br/archlinux/$repo/os/$arch
@@ -186,8 +185,6 @@
 #Server = http://ftp.hosteurope.de/mirror/ftp.archlinux.org/$repo/os/$arch
 #Server = http://ftp-stud.hs-esslingen.de/pub/Mirrors/archlinux/$repo/os/$arch
 #Server = http://archlinux.mirror.iphh.net/$repo/os/$arch
-#Server = http://repo.itmettke.de/archlinux/$repo/os/$arch
-#Server = https://repo.itmettke.de/archlinux/$repo/os/$arch
 #Server = http://arch.jensgutermuth.de/$repo/os/$arch
 #Server = https://arch.jensgutermuth.de/$repo/os/$arch
 #Server = http://k42.ch/mirror/archlinux/$repo/os/$arch
@@ -253,6 +250,8 @@
 ## Hungary
 #Server = http://ftp.energia.mta.hu/pub/mirrors/ftp.archlinux.org/$repo/os/$arch
 #Server = http://archmirror.hbit.sztaki.hu/archlinux/$repo/os/$arch
+#Server = http://quantum-mirror.hu/mirrors/pub/archlinux/$repo/os/$arch
+#Server = https://quantum-mirror.hu/mirrors/pub/archlinux/$repo/os/$arch
 
 ## Iceland
 #Server = http://mirror.system.is/arch/$repo/os/$arch
@@ -419,6 +418,8 @@
 #Server = https://archimonde.ts.si/archlinux/$repo/os/$arch
 
 ## South Africa
+#Server = http://archlinux.za.mirror.allworldit.com/archlinux/$repo/os/$arch
+#Server = https://archlinux.za.mirror.allworldit.com/archlinux/$repo/os/$arch
 #Server = http://za.mirror.archlinux-br.org/$repo/os/$arch
 #Server = http://mirror.is.co.za/mirror/archlinux.org/$repo/os/$arch
 
@@ -429,6 +430,8 @@
 #Server = http://mirror.premi.st/archlinux/$repo/os/$arch
 
 ## Spain
+#Server = http://mirror.librelabucm.org/archlinux/$repo/os/$arch
+#Server = https://mirror.librelabucm.org/archlinux/$repo/os/$arch
 #Server = http://osl.ugr.es/archlinux/$repo/os/$arch
 #Server = http://ftp.rediris.es/mirror/archlinux/$repo/os/$arch
 
@@ -472,6 +475,8 @@
 #Server = https://mirrors.nix.org.ua/linux/archlinux/$repo/os/$arch
 
 ## United Kingdom
+#Server = http://archlinux.uk.mirror.allworldit.com/archlinux/$repo/os/$arch
+#Server = https://archlinux.uk.mirror.allworldit.com/archlinux/$repo/os/$arch
 #Server = http://mirror.bytemark.co.uk/archlinux/$repo/os/$arch
 #Server = https://mirror.bytemark.co.uk/archlinux/$repo/os/$arch
 #Server = http://mirrors.manchester.m247.com/arch-linux/$repo/os/$arch
@@ -492,8 +497,8 @@
 #Server = https://archlinux.surlyjake.com/archlinux/$repo/os/$arch
 #Server = http://arlm.tyzoid.com/$repo/os/$arch
 #Server = https://arlm.tyzoid.com/$repo/os/$arch
-#Server = http://mirror.as65535.net/archlinux/$repo/os/$arch
 #Server = http://mirrors.cat.pdx.edu/archlinux/$repo/os/$arch
+#Server = http://mirror.cc.columbia.edu/pub/linux/archlinux/$repo/os/$arch
 #Server = http://arch.mirror.constant.com/$repo/os/$arch
 #Server = https://arch.mirror.constant.com/$repo/os/$arch
 #Server = http://mirror.cs.pitt.edu/archlinux/$repo/os/$arch
@@ -501,8 +506,6 @@
 #Server = http://distro.ibiblio.org/archlinux/$repo/os/$arch
 #Server = http://mirror.es.its.nyu.edu/archlinux/$repo/os/$arch
 #Server = http://mirrors.gigenet.com/archlinux/$repo/os/$arch
-#Server = http://mirror.grig.io/archlinux/$repo/os/$arch
-#Server = https://mirror.grig.io/archlinux/$repo/os/$arch
 #Server = http://www.gtlib.gatech.edu/pub/archlinux/$repo/os/$arch
 #Server = http://mirror.dc02.hackingand.coffee/arch/$repo/os/$arch
 #Server = http://mirror.hackingand.coffee/arch/$repo/os/$arch
