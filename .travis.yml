@@ -18,7 +18,7 @@ script:
 - sudo cp -bf ../pacman.conf.nosig ./etc/pacman.conf
 - sudo sed -i -e "s/#en_US.UTF-8/en_US.UTF-8/" ./etc/locale.gen
 - echo "LANG=en_US.UTF-8" | sudo tee ./etc/locale.conf
-- ln -sf /etc/locale.conf ./etc/default/locale
+- sudo ln -sf /etc/locale.conf ./etc/default/locale
 - sudo cp -f ../${FRTCP_FN} ./root/
 - sudo cp -f /etc/resolv.conf ./etc/resolv.conf
 - sudo mv -f ./etc/mtab ./etc/mtab.bak
