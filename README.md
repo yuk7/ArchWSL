@@ -61,6 +61,8 @@ Useage :
       - `--append-path`: Get on/off status of Append Windows PATH to $PATH
       - `--mount-drive`: Get on/off status of Mount drives
       - `--lxuid`: Get LxUID key for this distro
+    backup
+      - Execute the backup function using tar.
 
     clean
       - Uninstalls the distro.
