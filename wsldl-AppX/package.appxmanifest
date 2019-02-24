@@ -47,7 +47,12 @@
         Square150x150Logo="images\Square150x150Logo.png"
         Square44x44Logo="images\Square44x44Logo.png">
 
-        <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" />
+        <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" ShortName="ArchWSL">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
         <uap:SplashScreen Image="images\splashscreen.png" />
 
       </uap:VisualElements>
