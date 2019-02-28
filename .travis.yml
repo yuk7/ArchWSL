@@ -1,10 +1,12 @@
-sudo: required
+sudo: false
 dist: trusty
-group: deprecated-2017Q4
 language: bash
-before_script:
-- sudo apt-get update -qq
-- sudo apt-get install aria2 zip unzip check -qq
+addons:
+  apt:
+    packages:
+    - aria2
+    - zip
+    - unzip
 script:
 - source ./env.sh
 - "${DLR} ${ROOTFS_URL} -o ${ROOTFS_FN}"
