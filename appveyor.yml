@@ -20,3 +20,19 @@ before_build:
 
 build_script:
   - cmd: msbuild appx\wsldl-AppX.sln /p:Configuration=Release;AppxBundle=Never
+
+after_build:
+  - ps: New-Item out -ItemType Directory
+  - ps: Move-Item appx\wsldl-AppX\AppPackages\wsldl-AppX_${env:appx_ver}_x64_Test\wsldl-AppX_${env:appx_ver}_x64.appx out\ArchWSL-AppX_${env:appx_ver}_x64.appx
+  - ps: Move-Item appx\wsldl-AppX\AppPackages\wsldl-AppX_${env:appx_ver}_x64_Test\wsldl-AppX_${env:appx_ver}_x64.cer out\ArchWSL_-AppX${env:appx_ver}_x64.cer
+
+artifacts:
+  - path: 'out\*.appx'
+  - path: 'out\*.cer'
+
+deploy:
+ - provider: GitHub
+   auth_token:
+     secure: 4E1LKf0gRUSciyoPkXps27bqYlHGeWJa0PwFdApSy+rHaHq/p3d9k9NOBNYivLEA
+   on:
+     appveyor_repo_tag: true 
