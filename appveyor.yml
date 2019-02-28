@@ -1,0 +1,22 @@
+os: Visual Studio 2017
+
+environment:
+  appx_ver: 19.2.24.0
+  wsldl_ver: 19022600
+  fs_ver: 19022800
+  pfx_secret:
+    secure: XlXaj3gSIBd9YNKz8zuI9dtBJIoq+TTwj3HkWyyXzUTuk5b/Ur7OY2abhV9zNacetbLJKfKQSYJQLIUF9uNAFHMZoDdAKK6rq2Uzii+JB3KBaWg7w5iIfdJKD6/LD3TYjVUzQPYzEGMC45s6adk8ru3CR2kDJzhvrvqf93pL55E=
+
+install:
+  - cmd: git submodule init
+  - cmd: git submodule update
+  - ps: iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/secure-file/master/install.ps1'))
+  - cmd: appveyor-tools\secure-file -decrypt appx\wsldl-AppX\wsldl-AppX_TemporaryKey.pfx.enc -secret %pfx_secret%
+
+before_build:
+  - ps: Invoke-WebRequest https://github.com/yuk7/wsldl/releases/download/${env:wsldl_ver}/icons.zip -OutFile icons.zip -UseBasicParsing
+  - ps: Expand-Archive icons.zip -DestinationPath appx\wsldl-AppX\
+  - ps: Invoke-WebRequest https://github.com/yuk7/ArchWSL-FS/releases/download/${env:fs_ver}/rootfs.tar.gz -OutFile appx\wsldl-AppX\rootfs.tar.gz -UseBasicParsing
+
+build_script:
+  - cmd: msbuild appx\wsldl-AppX.sln /p:Configuration=Release;AppxBundle=Never
