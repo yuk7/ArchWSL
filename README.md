@@ -11,13 +11,13 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 ![License](https://img.shields.io/github/license/yuk7/ArchWSL.svg?style=flat-square)
 
 
-### [Download](https://github.com/yuk7/ArchWSL/releases/latest) | [Wiki](https://github.com/yuk7/ArchWSL/wiki)
+### [⬇Download](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Wiki](https://github.com/yuk7/ArchWSL/wiki)
 
-## Requirements
+## 💻Requirements
 * Windows 10 1709 Fall Creators Update 64bit or later.
 * Windows Subsystem for Linux feature is enabled.
 
-## Install
+## 📦Install
 #### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip
 
 #### 2. Extract all files in zip file to same directory
@@ -40,7 +40,7 @@ If you rename it you can register with a different name and have multiple instal
 ```
 
 
-## How-to-Use(for Installed Instance)
+## 📝How-to-Use(for Installed Instance)
 #### exe Usage
 ```dos
 Useage :
@@ -71,5 +71,5 @@ Useage :
       - Print this usage message.
 ```
 
-## Known issues
+## 🚫Known issues
 Please see [Wiki](https://github.com/yuk7/ArchWSL/wiki).
