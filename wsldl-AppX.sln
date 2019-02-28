@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "wsldl-AppX", "wsldl-AppX\wsldl-AppX.jsproj", "{D424F6BB-A05F-433A-BAD2-E23CEAD9E57F}"
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "ArchWSL", "wsldl-AppX\wsldl-AppX.jsproj", "{D424F6BB-A05F-433A-BAD2-E23CEAD9E57F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
