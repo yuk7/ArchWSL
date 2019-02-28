@@ -1,14 +1,9 @@
 #!/bin/bash
 
 ARCH="x86_64"
-ROOTFS_VER="2019.02.01"
-ROOTFS_FN="archlinux-bootstrap-${ROOTFS_VER}-${ARCH}.tar.gz"
-ROOTFS_URL="http://mirrors.kernel.org/archlinux/iso/${ROOTFS_VER}/${ROOTFS_FN}"
-
-FRTCP_BLD="18082100"
-FRTCP_VER="1.23-1"
-FRTCP_FN="fakeroot-tcp-${FRTCP_VER}-${ARCH}.pkg.tar.xz"
-FRTCP_URL="https://github.com/yuk7/arch-prebuilt/releases/download/${FRTCP_BLD}/${FRTCP_FN}"
+ROOTFS_VER="19022800"
+ROOTFS_FN="rootfs.tar.gz"
+ROOTFS_URL="https://github.com/yuk7/ArchWSL-FS/releases/download/${ROOTFS_VER}/${ROOTFS_FN}"
 
 LNCR_BLD="19022300"
 LNCR_ZIP="icons.zip"
