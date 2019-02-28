@@ -24,7 +24,7 @@ build_script:
 after_build:
   - ps: New-Item out -ItemType Directory
   - ps: Move-Item appx\wsldl-AppX\AppPackages\wsldl-AppX_${env:appx_ver}_x64_Test\wsldl-AppX_${env:appx_ver}_x64.appx out\ArchWSL-AppX_${env:appx_ver}_x64.appx
-  - ps: Move-Item appx\wsldl-AppX\AppPackages\wsldl-AppX_${env:appx_ver}_x64_Test\wsldl-AppX_${env:appx_ver}_x64.cer out\ArchWSL_-AppX${env:appx_ver}_x64.cer
+  - ps: Move-Item appx\wsldl-AppX\AppPackages\wsldl-AppX_${env:appx_ver}_x64_Test\wsldl-AppX_${env:appx_ver}_x64.cer out\ArchWSL-AppX_${env:appx_ver}_x64.cer
 
 artifacts:
   - path: 'out\*.appx'
