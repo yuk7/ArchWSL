@@ -1,0 +1,4 @@
+[submodule "appx"]
+	path = appx
+	url = https://github.com/yuk7/ArchWSL.git
+	branch = appx
