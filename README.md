@@ -19,7 +19,8 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 * Windows 10 1709 Fall Creators Update 64bit or later.
 * Windows Subsystem for Linux feature is enabled.
 
-## 📦Install
+## 💾Install
+### 📁zip
 #### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip
 
 #### 2. Extract all files in zip file to same directory
@@ -40,7 +41,10 @@ If you rename it you can register with a different name and have multiple instal
 [root@PC-NAME user]# pacman-key --populate
 
 ```
-
+### 📦appx
+#### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer .appx and .cer
+#### 2. Install .cer to Trusted root Certificate
+#### 3. Install .appx
 
 ## 📝How-to-Use(for Installed Instance)
 #### exe Usage
