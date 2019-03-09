@@ -1,5 +1,4 @@
-sudo: required
-dist: trusty
+dist: xenial
 language: bash
 addons:
   apt:
