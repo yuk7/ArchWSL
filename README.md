@@ -77,5 +77,14 @@ Useage :
       - Print this usage message.
 ```
 
+## ⬆️Update
+### 📁zip
+#### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip
+#### 2. Extract .exe and rootfs.tar.gz from .zip and overwrites existing ones.
+
+### 📦appx
+#### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer .appx
+#### 2.Overwrite install .appx
+
 ## 🚫Known issues
 Please see [Wiki](https://github.com/yuk7/ArchWSL/wiki).
