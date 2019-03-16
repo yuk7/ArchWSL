@@ -18,7 +18,7 @@ before_build:
   - ps: Expand-Archive icons.zip -DestinationPath appx\wsldl-AppX\
   - ps: Invoke-WebRequest https://github.com/yuk7/ArchWSL-FS/releases/download/${env:fs_ver}/rootfs.tar.gz -OutFile appx\wsldl-AppX\rootfs.tar.gz -UseBasicParsing
   - ps: $file_contents = $(Get-Content "appx\wsldl-AppX\package.appxmanifest") -replace 'Version="19.0.0.0"','Version="${env:appx_ver}"'
-  - ps: $file_contents > appx\wsldl-AppX\package.appxmanifest
+  - ps: $file_contents | Out-File "appx\wsldl-AppX\package.appxmanifest" -Encoding utf8 
 
 build_script:
   - cmd: msbuild appx\wsldl-AppX.sln /p:Configuration=Release;AppxBundle=Never
