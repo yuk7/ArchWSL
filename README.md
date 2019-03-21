@@ -44,6 +44,9 @@ If you rename it you can register with a different name and have multiple instal
 ### 📦appx
 #### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer .appx and .cer
 #### 2. Install .cer to Trusted root Certificate
+[For details, please refer to the wiki](https://github.com/yuk7/ArchWSL/wiki/Install-Certificate)
+
+You need administrator privileges to install the certificate
 #### 3. Install .appx
 
 ## 📝How-to-Use(for Installed Instance)
