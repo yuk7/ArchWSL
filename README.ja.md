@@ -1,5 +1,5 @@
 # ArchWSL
-Arch LinuxをWSLに (Windows 10 FCU以降/[wsldl](https://github.com/yuk7/wsldl)ベース)
+Arch LinuxをWSLに (Windows 10 FCU以降対応/[wsldl](https://github.com/yuk7/wsldl)ベース)
 
 
 ![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
@@ -35,6 +35,9 @@ exeのファイル名はインストール名に使用されます。
 このバージョンの場合は、ストアアプリパッケージとしてインストール/管理できます。
 #### 1. .appxと署名ファイル.cerを[ダウンロード](https://github.com/yuk7/ArchWSL/releases/latest)
 #### 2. .cerを信頼されたルート証明書としてインストール
+「ローカルマシン」 の 「信頼されたルート証明書ストア」を手動で選択してインストールしてください。
+
+詳細手順は[wiki/Install-Certificate](https://github.com/yuk7/ArchWSL/wiki/Install-Certificate)を参照
 #### 3. .appxをインストール
 
 ## 📝使い方(インストール後)
