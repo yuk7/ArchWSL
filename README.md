@@ -9,6 +9,7 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 [![AppVeyor](https://img.shields.io/appveyor/ci/yuk7/ArchWSL.svg?logo=Windows&style=flat-square)](https://ci.appveyor.com/project/yuk7/archwsl)
 [![Travis (.org)](https://img.shields.io/travis/yuk7/ArchWSL-FS.svg?logo=Linux&style=flat-square)](https://travis-ci.org/yuk7/ArchWSL-FS)
 [![Github All Releases](https://img.shields.io/github/downloads/yuk7/ArchWSL/total.svg?style=flat-square)](https://github.com/yuk7/ArchWSL/releases/latest)
+[![Gitter](https://img.shields.io/badge/chat-on%20gitter-brightgreen.svg?style=flat-square)](https://gitter.im/yuk7/wsldl)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![License](https://img.shields.io/github/license/yuk7/ArchWSL.svg?style=flat-square)
 
