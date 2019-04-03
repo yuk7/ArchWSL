@@ -33,16 +33,7 @@ For example 'Program Files' can not be used.
 Exe filename is using to the instance name to register.
 If you rename it you can register with a different name and have multiple installs.
 
-  **Note:** _Source code for Arch.exe can be found in [yuk7/wsldl](https://github.com/yuk7/wsldl)._
 
-#### 4. Before using pacman, please initialize keyring
-```dos
->Arch.exe
-[root@PC-NAME user]# pacman-key --init
-
-[root@PC-NAME user]# pacman-key --populate
-
-```
 ### 📦appx
 #### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer .appx and .cer
 #### 2. Install .cer to "Trusted Root Certificate Store" of the local machine
