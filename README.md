@@ -22,6 +22,7 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 * Windows Subsystem for Linux feature is enabled.
 
 ## 💾Install
+**[For details, please refer to the wiki](https://github.com/yuk7/ArchWSL/wiki/How-to-Setup)**
 ### 📁zip
 #### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip
 
