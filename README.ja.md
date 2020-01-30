@@ -50,6 +50,9 @@ Usage :
     run <command line>
       - 与えられたコマンドラインをインスタンス内で実行します。 カレントディレクトリが引き継がれます。
 
+    runp <command line (windowsのパスを含む)>
+      - 与えられたコマンドラインのパスを変換した上でインスタンス内で実行します。
+
     config [setting [value]]
       - `--default-user <user>`: インスタンスのデフォルトユーザーを<user>に設定します。
       - `--default-uid <uid>`: インスタンスのデフォルトユーザーのuidを<uid>に設定します。
@@ -62,8 +65,9 @@ Usage :
       - `--mount-drive`: Windowsのドライブをマウントする機能のon/offを確認します。
       - `--lxuid`: システム内部で使用されているLxUIDを取得します。
 
-    backup
-      - tarを使用し、カレントディレクトリにbackup.tar.gzを出力します。
+    backup [contents]
+      - `--tgz`: tarを使用し、カレントディレクトリにbackup.tar.gzを出力します。
+      - `--reg`: 設定のレジストリファイルをbackup.regとしてカレントディレクトリに出力します。
       
     clean
       - インスタンスをアンインストールします。
