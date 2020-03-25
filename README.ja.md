@@ -58,11 +58,14 @@ Usage :
       - `--default-uid <uid>`: インスタンスのデフォルトユーザーのuidを<uid>に設定します。
       - `--append-path <on|off>`: Windows側のPATH設定をLinux側に引き継ぐ機能のon/offを設定します。
       - `--mount-drive <on|off>`: Windowsのドライブをマウントする機能のon/offを設定します。
+      - `--default-term <default|wt|flute>`: デフォルトのターミナルを設定します。
 
     get [setting]
       - `--default-uid`: インスタンスのデフォルトユーザーのuidを取得します。
       - `--append-path`: Windows側のPATH設定をLinux側に引き継ぐ機能のon/offを確認します。
       - `--mount-drive`: Windowsのドライブをマウントする機能のon/offを確認します。
+      - `--wsl-version`: WSLのバージョン(1/2)を確認します。
+      - `--default-term`: このランチャーに設定されたデフォルトのターミナルを確認します。
       - `--lxuid`: システム内部で使用されているLxUIDを取得します。
 
     backup [contents]

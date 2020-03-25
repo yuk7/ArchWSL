@@ -60,11 +60,14 @@ Usage :
       - `--default-uid <uid>`: Set the default user uid for this distro to <uid>
       - `--append-path <on|off>`: Switch of Append Windows PATH to $PATH
       - `--mount-drive <on|off>`: Switch of Mount drives
+      - `--default-term <default|wt|flute>`: Set default terminal window
 
     get [setting]
       - `--default-uid`: Get the default user uid in this distro
       - `--append-path`: Get on/off status of Append Windows PATH to $PATH
       - `--mount-drive`: Get on/off status of Mount drives
+      - `--wsl-version`: Get WSL Version 1/2 for this distro
+      - `--default-term`: Get Default Terminal for this distro launcher
       - `--lxguid`: Get WSL GUID key for this distro
 
     backup [contents]
