@@ -1,11 +1,11 @@
 #!/bin/bash
 
 ARCH="x86_64"
-ROOTFS_VER="20020700"
+ROOTFS_VER="20040300"
 ROOTFS_FN="rootfs.tar.gz"
 ROOTFS_URL="https://github.com/yuk7/ArchWSL-FS/releases/download/${ROOTFS_VER}/${ROOTFS_FN}"
 
-LNCR_BLD="20032600"
+LNCR_BLD="20040300"
 LNCR_ZIP="icons.zip"
 LNCR_FN="Arch.exe"
 LNCR_URL="https://github.com/yuk7/wsldl/releases/download/${LNCR_BLD}/${LNCR_ZIP}"
