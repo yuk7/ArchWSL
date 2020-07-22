@@ -39,6 +39,8 @@ If you rename it you can register with a different name and have multiple instal
 #### 2. Install .cer to "Trusted Root Certification Authorities" of the local machine
 [For details, please refer to the wiki](https://github.com/yuk7/ArchWSL/wiki/Install-Certificate)
 
+You need administrator privileges to install the certificate
+
 ### 🍫 Chocolatey
 `choco install wsl-archlinux`
 
@@ -47,7 +49,6 @@ If you rename it you can register with a different name and have multiple instal
 
 `scoop install archwsl `
 
-You need administrator privileges to install the certificate
 #### 3. Install .appx
 
 ## 📝How-to-Use(for Installed Instance)
