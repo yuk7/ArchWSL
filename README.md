@@ -42,6 +42,11 @@ If you rename it you can register with a different name and have multiple instal
 You need administrator privileges to install the certificate
 #### 3. Install .appx
 
+### 🥄 Scoop
+`scoop bucket add extras `
+
+`scoop install archwsl `
+
 ## 📝How-to-Use(for Installed Instance)
 #### exe Usage
 ```dos
