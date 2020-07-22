@@ -40,6 +40,7 @@ If you rename it you can register with a different name and have multiple instal
 [For details, please refer to the wiki](https://github.com/yuk7/ArchWSL/wiki/Install-Certificate)
 
 You need administrator privileges to install the certificate
+#### 3. Install .appx
 
 ### 🍫 Chocolatey
 `choco install wsl-archlinux`
@@ -48,8 +49,6 @@ You need administrator privileges to install the certificate
 `scoop bucket add extras `
 
 `scoop install archwsl `
-
-#### 3. Install .appx
 
 ## 📝How-to-Use(for Installed Instance)
 #### exe Usage
