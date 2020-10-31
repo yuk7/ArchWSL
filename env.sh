@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ARCH="x86_64"
-ROOTFS_VER="20040300"
+ROOTFS_VER="20101600"
 ROOTFS_FN="rootfs.tar.gz"
 ROOTFS_URL="https://github.com/yuk7/ArchWSL-FS/releases/download/${ROOTFS_VER}/${ROOTFS_FN}"
 
