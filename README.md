@@ -14,14 +14,14 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 
 [日本語](https://github.com/yuk7/ArchWSL/blob/master/README.ja.md)
 
-### [⬇Download](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Wiki](https://github.com/yuk7/ArchWSL/wiki)
+### [⬇Download](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Docs](https://git.io/arch-doc)
 
 ## 💻Requirements
 * Windows 10 1709 Fall Creators Update 64bit or later.
 * Windows Subsystem for Linux feature is enabled.
 
 ## 💾Install
-**[For details, please refer to the wiki](https://github.com/yuk7/ArchWSL/wiki/How-to-Setup)**
+**[For details, please refer to the docs](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**
 ### 📁zip
 #### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip
 
@@ -37,7 +37,7 @@ If you rename it you can register with a different name and have multiple instal
 ### 📦appx
 #### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer .appx and .cer
 #### 2. Install .cer to "Trusted Root Certification Authorities" of the local machine
-[For details, please refer to the wiki](https://github.com/yuk7/ArchWSL/wiki/Install-Certificate)
+[For details, please refer to the docs](https://wsldl-pg.github.io/ArchW-docs/Install-Certificate)
 
 You need administrator privileges to install the certificate
 #### 3. Install .appx
@@ -96,4 +96,4 @@ Usage :
 #### 2.Overwrite install .appx
 
 ## 🚫Known issues
-Please see [Wiki](https://github.com/yuk7/ArchWSL/wiki).
+Please see [docs](https://git.io/arch-doc).
