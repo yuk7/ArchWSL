@@ -76,7 +76,7 @@ Usage :
       - `--lxguid`: Get WSL GUID key for this distro
 
     backup [contents]
-      - `--tgz`: Output backup.tar.gz to the current directory using tar command
+      - `--tar`: Output backup.tar to the current directory
       - `--reg`: Output settings registry file to the current directory
 
     clean
