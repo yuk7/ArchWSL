@@ -1,0 +1,16 @@
+name: Build zip CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: setup requirements
+      run: |
+        sudo apt update
+        sudo apt install bsdtar curl
+    - name: make
+      run: make
