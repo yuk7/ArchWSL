@@ -12,7 +12,7 @@ ArchLinux 在 WSL (Windows 10 秋季创作者更新或者更新.）
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![License](https://img.shields.io/github/license/yuk7/ArchWSL.svg?style=flat-square)
 
-[日本語](https://github.com/yuk7/ArchWSL/blob/master/README.ja.md)
+[English](https://github.com/yuk7/ArchWSL/blob/master/README.md)
 
 ### [⬇下载](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Docs](https://git.io/arch-doc)
 
