@@ -1,6 +1,6 @@
 # ArchWSL
-ArchLinux 在 WSL (Windows 10 秋季创作者更新 or later)
-基于 [wsldl](https://github.com/yuk7/wsldl)
+ArchLinux 在 WSL (Windows 10 秋季创作者更新或者更新.）
+基于 [wsldl](https://github.com/yuk7/wsldl)。
 
 
 ![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
