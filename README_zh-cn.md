@@ -1,5 +1,5 @@
 # ArchWSL
-ArchLinux 在 WSL (Windows 10 秋季创作者更新或者更新.）
+WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
 基于 [wsldl](https://github.com/yuk7/wsldl)。
 
 
@@ -14,30 +14,32 @@ ArchLinux 在 WSL (Windows 10 秋季创作者更新或者更新.）
 
 [English](https://github.com/yuk7/ArchWSL/blob/master/README.md)
 
-### [⬇下载](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Docs](https://git.io/arch-doc)
+### [⬇下载](https://github.com/yuk7/ArchWSL/releases/latest) | [📓文档](https://git.io/arch-doc)
 
 ## 💻系统需求
-* Windows 10 1709 秋季创意者更新 64Bit （或者更新版本）。
-* Windows Subsystem for Linux 功能处于开启状态。
+* Windows 10 1709 秋季创意者更新 64位版本，或者更新。
+* “适用于 Linux 的 Windows 子系统” 功能处于开启状态。
 
 ## 💾安装
 **[更多详情，请查看文档](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**
-### 📁zip
-#### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 安装zip
+### 📁Zip
+#### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 安装 zip 文件。
 
-#### 2. 将所有zip里的文件解压到相同的目录。
-请使用一个你拥有全部权限的文件夹！
-例如，不要用Program Files。
+#### 2. 将Zip里的所有文件解压到相同的目录。
+请使用一个你拥有全部访问权限的文件夹！
+
+例如，不要放进”Program Files“。
 
 #### 3. 运行 Arch.exe 来释放rootfs和注册表配置到WSL。
-Exe的文件名用于识别不同的安装。
-也就是说，如果你重命名它，就可以以不同的名称注册，从而安装多份。
 
+另外，EXE文件名称是用作WSL实例名称的名称。
+
+也就是说，如果重命名它，就可以多次安装。
 
 ### 📦appx
 #### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 安装器 .appx 和 .cer
-#### 2. 安装.cer 到“本地计算机”的 "Trusted Root Certification Authorities"
-[更多详情，请查看文档](https://wsldl-pg.github.io/ArchW-docs/Install-Certificate)
+#### 2. 安装 .cer 文件到 “本地计算机” 的 "Trusted Root Certification Authorities"
+[更多详情，请查看文档](https://wsldl-pg.github.io/ArchW-docs/Install-Certificate)。
 
 你必须有管理员权限才能安装证书！
 #### 3. 安装 .appx
@@ -50,50 +52,50 @@ Exe的文件名用于识别不同的安装。
 ## 📝如何使用(for Installed Instance)
 #### exe 用法
 ```dos
-Usage :
-    <no args>
-      - Open a new shell with your default settings.
+用法 :
+    <无参数>
+      - 以你的默认设置打开一个新的Shell。
 
-    run <command line>
-      - Run the given command line in that distro. Inherit current directory.
+    run <命令行>
+      - 在指定的发行版中运行你所给出的命令，继承当前Shell的所在目录。
 
-    runp <command line (includes windows path)>
-      - Run the path translated command line in that distro.
+    runp <命令行 (包含 windows 路径)>
+      - 在指定的发行版里运行转译过的命令行。
 
-    config [setting [value]]
-      - `--default-user <user>`: Set the default user for this distro to <user>
-      - `--default-uid <uid>`: Set the default user uid for this distro to <uid>
-      - `--append-path <on|off>`: Switch of Append Windows PATH to $PATH
-      - `--mount-drive <on|off>`: Switch of Mount drives
-      - `--default-term <default|wt|flute>`: Set default terminal window
+    config [setting [值]]
+      - `--default-user <用户>`: 在此发行版中设定默认用户到 <用户>。
+      - `--default-uid <uid>`: 在此发行版中设置默认用户 UID 成 <uid>。
+      - `--append-path <on|off>`: 加入 Windows PATH 到 $PATH 的开关。
+      - `--mount-drive <on|off>`: 挂载驱动器的开关。
+      - `--default-term <default|wt|flute>`: 设置默认的终端窗口。
 
     get [setting]
-      - `--default-uid`: Get the default user uid in this distro
-      - `--append-path`: Get on/off status of Append Windows PATH to $PATH
-      - `--mount-drive`: Get on/off status of Mount drives
-      - `--wsl-version`: Get WSL Version 1/2 for this distro
-      - `--default-term`: Get Default Terminal for this distro launcher
-      - `--lxguid`: Get WSL GUID key for this distro
+      - `--default-uid`: 显示此发行版的默认用户UID。
+      - `--append-path`: 显示”加入 Windows PATH 到 $PATH“的开关状态。
+      - `--mount-drive`: 显示”自动挂载驱动器”的开关状态。
+      - `--wsl-version`: 显示此发行版的WSL版本（1/2）。
+      - `--default-term`: 显示此发行版启动器的默认终端。
+      - `--lxguid`: 显示此发行版的 WSL GUID key。
 
     backup [contents]
-      - `--tar`: Output backup.tar to the current directory
-      - `--reg`: Output settings registry file to the current directory
+      - `--tar`: 输出 backup.tar 到当前目录
+      - `--reg`: 输出设置注册表文件到当前目录。
 
     clean
-      - Uninstall the distro.
+      - 卸载此发行版。
 
     help
-      - Print this usage message.
+      - 显示此帮助信息。
 ```
 
 ## ⬆️更新
 ### 📁zip
-#### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 安装器 zip
-#### 2. 从Zip解压 .exe 和 rootfs.tar.gz，然后覆盖你已有的。
+#### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 安装器 zip 文件。
+#### 2. 从 Zip 中解压 .exe 和 rootfs.tar.gz，然后覆盖你已有的文件。
 
 ### 📦appx
-#### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 安装器 .appx
-#### 2. 覆盖 .appx
+#### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 安装器 .appx 文件。
+#### 2. 覆盖 已有的.appx
 
-## 🚫Known issues
-查看 [文档](https://git.io/arch-doc).
+## 🚫已知问题
+请查看 [文档](https://git.io/arch-doc).
