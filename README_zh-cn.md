@@ -42,14 +42,14 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
 [更多详情，请查看文档](https://wsldl-pg.github.io/ArchW-docs/Install-Certificate)。
 
 你必须有管理员权限才能安装证书！
-#### 3. 安装 .appx
+#### 3. 安装 .appx 。
 
 ### 🥄 Scoop
 `scoop bucket add extras `
 
 `scoop install archwsl `
 
-## 📝如何使用(for Installed Instance)
+## 📝如何使用(安装后的容器)
 #### exe 用法
 ```dos
 用法 :
@@ -57,10 +57,10 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
       - 以你的默认设置打开一个新的Shell。
 
     run <命令行>
-      - 在指定的发行版中运行你所给出的命令，继承当前Shell的所在目录。
+      - 在此发行版中运行你所给出的命令，继承当前Shell的所在目录。
 
     runp <命令行 (包含 windows 路径)>
-      - 在指定的发行版里运行转译过的命令行。
+      - 在此发行版里运行转译过的命令行。
 
     config [setting [值]]
       - `--default-user <用户>`: 在此发行版中设定默认用户到 <用户>。
@@ -72,7 +72,7 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
     get [setting]
       - `--default-uid`: 显示此发行版的默认用户UID。
       - `--append-path`: 显示”加入 Windows PATH 到 $PATH“的开关状态。
-      - `--mount-drive`: 显示”自动挂载驱动器”的开关状态。
+      - `--mount-drive`: 显示”挂载驱动器”的开关状态。
       - `--wsl-version`: 显示此发行版的WSL版本（1/2）。
       - `--default-term`: 显示此发行版启动器的默认终端。
       - `--lxguid`: 显示此发行版的 WSL GUID key。
@@ -95,7 +95,7 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
 
 ### 📦appx
 #### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 安装器 .appx 文件。
-#### 2. 覆盖 已有的.appx
+#### 2. 覆盖已有的 .appx 文件
 
 ## 🚫已知问题
 请查看 [文档](https://git.io/arch-doc).
