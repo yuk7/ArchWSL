@@ -26,7 +26,7 @@ WSL 的 ArchLinux 封裝，可用於 Windows 10 1709 或是更高的版本，
 #### 1. [下載](https://github.com/yuk7/ArchWSL/releases/latest) 安裝 zip 檔案。
 
 #### 2. 釋放壓縮檔中的所有檔案至相同目錄。
-請使用一個你擁有全部訪問權限的文件夾！
+請使用一個你擁有全部訪問權限的資料夾！
 
 例如，不要使用”Program Files“。
 
@@ -63,8 +63,8 @@ WSL 的 ArchLinux 封裝，可用於 Windows 10 1709 或是更高的版本，
       - 在指定的發行版裡運行轉譯過的命令行。
 
     config [setting [值]]
-      - `--default-user <用戶>`: 在此發行版中設定默認使用者到 <使用者>。
-      - `--default-uid <uid>`: 在此發行版中設置默認用戶 UID 成 <uid>。
+      - `--default-user <使用者>`: 在此發行版中設定默認使用者到 <使用者>。
+      - `--default-uid <uid>`: 在此發行版中設置默認使用者 UID 成 <uid>。
       - `--append-path <on|off>`: 加入 Windows PATH 到 $PATH 的開關。
       - `--mount-drive <on|off>`: 裝載驅動器的開關。
       - `--default-term <default|wt|flute>`: 設置默認的終端窗口。
@@ -82,10 +82,10 @@ WSL 的 ArchLinux 封裝，可用於 Windows 10 1709 或是更高的版本，
       - `--reg`: 輸出設置登錄檔檔案到當前目錄。
 
     clean
-      - 卸載此發行版。
+      - 解除安裝此發行版。
 
     help
-      - 顯示此幫助信息。
+      - 顯示此幫助資訊。
 ```
 
 ## ⬆️更新
