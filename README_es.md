@@ -32,7 +32,7 @@ Por ejemplo, la carpeta 'Archivos de Programa' no puede ser usado.
 
 #### 3. Ejecuta Arch.exe para extraer rootfs y registrarlo en WSL
 El nombre del .exe se utilizara para registrar la instancia
-Si le cambias el nombre, puedes registrarlo con otro nombre y con múltiples instalaciones.
+Si cambias el nombre del .exe, puedes registrarlo con otro nombre y con múltiples instalaciones.
 
 ### 📦appx
 #### 1. [Descarga](https://github.com/yuk7/ArchWSL/releases/latest) el instalador de .appx y .cer
