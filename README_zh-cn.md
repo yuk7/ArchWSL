@@ -49,7 +49,7 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
 
 `scoop install archwsl `
 
-## 📝如何使用(安装后的容器)
+## 📝如何使用(对于已安装的实例)
 #### exe 用法
 ```dos
 用法 :
