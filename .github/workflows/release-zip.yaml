@@ -1,0 +1,76 @@
+name: Release Zip CI
+
+on:
+  push:
+    tags:
+      - "*.*.*.*"
+
+jobs:
+  Build:
+    strategy:
+      matrix:
+        os: [ 'ubuntu-20.04', 'ubuntu-18.04' ]
+        container: [ 'archlinux:base-devel', null ]
+    runs-on: ${{ matrix.os }}
+    container: ${{ matrix.container }}
+    steps:
+    - name: Set matrix configuring name
+      shell: bash
+      run: |
+        matrix_name=$(
+          if [${{ matrix.container }} = ''];then
+            echo -n ${{ matrix.os }}
+          else
+            echo -n ${{ matrix.os }}-${{ matrix.container }}
+          fi
+        )
+        echo matrix-name=$(echo -n ${matrix_name}|tr ':' '-') >> $GITHUB_ENV
+
+    - uses: actions/checkout@main
+    - name: Install dependencies for build (Ubuntu)
+      shell: bash
+      if: matrix.container == null
+      run: |
+        sudo env DEBIAN_FRONTEND=noninteractive apt update -y && \
+        sudo env DEBIAN_FRONTEND=noninteractive apt install -y --no-install-recommends libarchive-tools aria2 curl jq tree
+    - name: Install dependencies for build (${{ matrix.container }}-${{ matrix.os }})
+      shell: bash
+      if: matrix.container == 'archlinux:base-devel'
+      run: |
+        pacman -Syy --needed --noconfirm libarchive aria2 curl jq tree
+    - name: Build Zip (${{ matrix.container }}-${{ matrix.os }})
+      run: make && tree
+    - name: Upload a Build Artifact (${{ matrix.container }}-${{ matrix.os }})
+      uses: actions/upload-artifact@main
+      with:
+        name: ${{ env.matrix-name }}--Arch.zip
+        path: ./Arch.zip
+
+  Release:
+    needs: [Build]
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Download Build Artifact
+      uses: actions/download-artifact@v2.0.1
+      with:
+        name: ubuntu-20.04-archlinux-base-devel--Arch.zip
+    - name: Create release
+      id: create_release
+      uses: actions/create-release@main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: false
+    - name: Upload Release Asset
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: Arch.zip
+        asset_name: Arch.zip
+        asset_content_type: application/zip
