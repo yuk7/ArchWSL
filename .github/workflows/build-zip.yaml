@@ -1,0 +1,32 @@
+name: Build Zip CI
+
+on:
+  push:
+    branches: [ 'master' ]
+  pull_request: 
+    branches: [ 'master' ]
+  schedule:
+    # Hourly
+    - cron: '0 * * * *'
+
+jobs:
+  Build:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@main
+    - name: Install dependencies for build (Apt)
+      shell: bash
+      run: |
+        sudo env DEBIAN_FRONTEND=noninteractive apt update -y && \
+        sudo env DEBIAN_FRONTEND=noninteractive apt install -y --no-install-recommends libarchive-tools curl aria2 jq tree
+    - name: Build Zip
+      shell: bash
+      env:
+        DLR: 'aria2c'
+        DLR_FLAGS: '-x16 -s20'
+      run: make -e && tree
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@main
+      with:
+        name: Arch.zip
+        path: ./Arch.zip

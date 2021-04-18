@@ -3,8 +3,8 @@ LNCR_EXE=Arch.exe
 
 DLR=curl
 DLR_FLAGS=-L
-BASE_URL=https://github.com/yuk7/ArchWSL-FS/releases/download/20101600/rootfs.tar.gz
-LNCR_ZIP_URL=https://github.com/yuk7/wsldl/releases/download/20100500/icons.zip
+BASE_URL!=curl -s https://api.github.com/repos/yuk7/ArchWSL-FS/releases | jq -r '.[0].assets[] | select(.name | test("rootfs.tar.gz")) | .browser_download_url'
+LNCR_ZIP_URL!=curl -s https://api.github.com/repos/yuk7/wsldl/releases | jq -r '.[0].assets[] | select(.name | test("icons.zip")) | .browser_download_url'
 LNCR_ZIP_EXE=Arch.exe
 
 all: $(OUT_ZIP)
