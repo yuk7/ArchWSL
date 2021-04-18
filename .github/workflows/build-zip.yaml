@@ -11,41 +11,19 @@ on:
 
 jobs:
   Build:
-    strategy:
-      matrix:
-        os: [ 'ubuntu-20.04', 'ubuntu-18.04' ]
-        container: [ 'archlinux:base-devel', null ]
-    runs-on: ${{ matrix.os }}
-    container: ${{ matrix.container }}
+    runs-on: ubuntu-20.04
     steps:
-    - name: Set matrix configuring name
-      shell: bash
-      run: |
-        matrix_name=$(
-          if [ "${{ matrix.container }}" = '' ];then
-            echo -n ${{ matrix.os }}
-          else
-            echo -n ${{ matrix.os }}-${{ matrix.container }}
-          fi
-        )
-        echo matrix-name=$(echo -n ${matrix_name}|tr ':' '-') >> $GITHUB_ENV
-
     - uses: actions/checkout@main
-    - name: Install dependencies for build (Ubuntu)
+    - name: Install dependencies for build (Apt)
       shell: bash
-      if: matrix.container == null
       run: |
         sudo env DEBIAN_FRONTEND=noninteractive apt update -y && \
-        sudo env DEBIAN_FRONTEND=noninteractive apt install -y --no-install-recommends libarchive-tools aria2 curl jq tree
-    - name: Install dependencies for build (${{ matrix.container }}-${{ matrix.os }})
+        sudo env DEBIAN_FRONTEND=noninteractive apt install -y --no-install-recommends libarchive-tools curl jq tree
+    - name: Build Zip
       shell: bash
-      if: matrix.container == 'archlinux:base-devel'
-      run: |
-        pacman -Syy --needed --noconfirm libarchive aria2 curl jq tree
-    - name: Build Zip (${{ matrix.container }}-${{ matrix.os }})
       run: make && tree
-    - name: Upload a Build Artifact (${{ matrix.container }}-${{ matrix.os }})
+    - name: Upload a Build Artifact
       uses: actions/upload-artifact@main
       with:
-        name: ${{ env.matrix-name }}--Arch.zip
+        name: Arch.zip
         path: ./Arch.zip
