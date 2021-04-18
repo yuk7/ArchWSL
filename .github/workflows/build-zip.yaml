@@ -23,7 +23,7 @@ jobs:
       shell: bash
       env:
         DLR: 'aria2c'
-        DLR_FLAGS: '-x16 -20'
+        DLR_FLAGS: '-x16 -s20'
       run: make -e && tree
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@main
