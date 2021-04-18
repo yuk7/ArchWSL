@@ -18,10 +18,13 @@ jobs:
       shell: bash
       run: |
         sudo env DEBIAN_FRONTEND=noninteractive apt update -y && \
-        sudo env DEBIAN_FRONTEND=noninteractive apt install -y --no-install-recommends libarchive-tools curl jq tree
+        sudo env DEBIAN_FRONTEND=noninteractive apt install -y --no-install-recommends libarchive-tools curl aria2 jq tree
     - name: Build Zip
       shell: bash
-      run: make && tree
+      env:
+        DLR: 'aria2c'
+        DLR_FLAGS: '-x16 -20'
+      run: make -e && tree
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@main
       with:
