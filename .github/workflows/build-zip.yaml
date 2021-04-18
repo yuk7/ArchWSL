@@ -22,7 +22,7 @@ jobs:
       shell: bash
       run: |
         matrix_name=$(
-          if ["${{ matrix.container }}" = ''];then
+          if [ "${{ matrix.container }}" = '' ];then
             echo -n ${{ matrix.os }}
           else
             echo -n ${{ matrix.os }}-${{ matrix.container }}
