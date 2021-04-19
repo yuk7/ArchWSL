@@ -14,7 +14,7 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 
 [日本語](https://github.com/yuk7/ArchWSL/blob/master/README_ja.md) | [简体中文](https://github.com/yuk7/ArchWSL/blob/master/README_zh-cn.md) | [繁體中文](https://github.com/yuk7/ArchWSL/blob/master/README_zh-tw.md)
 
-### ⬇Download [🍫Release](https://github.com/yuk7/ArchWSL/releases/latest) | [🌃Nightly Build](https://github.com/yuk7/ArchWSL/actions/workflows/build-zip.yaml?query=event%3Apush) || [📓Docs](https://git.io/arch-doc)
+### ⬇Download [🍫Release](https://github.com/yuk7/ArchWSL/releases/latest) | [🌃Nightly Build](https://github.com/yuk7/ArchWSL/actions/workflows/build-zip.yaml?query=event%3Aschedule+event%3Apush+workflow%3ABuild+branch%3Amaster+is%3Asuccess) || [📓Docs](https://git.io/arch-doc)
 
 ## 💻Requirements
 * Windows 10 1709 Fall Creators Update 64bit or later.
