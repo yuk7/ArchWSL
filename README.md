@@ -12,7 +12,7 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
 [![License](https://img.shields.io/github/license/yuk7/ArchWSL.svg?style=flat-square)](https://github.com/yuk7/ArchWSL/blob/master/LICENSE)
 
-[日本語](https://github.com/yuk7/ArchWSL/blob/master/README_ja.md) | [简体中文](https://github.com/yuk7/ArchWSL/blob/master/README_zh-cn.md) | [繁體中文](https://github.com/yuk7/ArchWSL/blob/master/README_zh-tw.md)
+[日本語](i18n/README_ja.md) | [简体中文](i18n/README_zh-cn.md) | [繁體中文](i18n/README_zh-tw.md) | [Español](i18n/README_es.md) | [português](i18n/README_pt-br.md)
 
 ### ⬇Download [🍫Release](https://github.com/yuk7/ArchWSL/releases/latest) | [🌃Nightly Build](https://github.com/yuk7/ArchWSL/actions/workflows/build-zip.yaml?query=event%3Aschedule+event%3Apush+workflow%3ABuild+branch%3Amaster+is%3Asuccess) || [📓Docs](https://git.io/arch-doc)
 
