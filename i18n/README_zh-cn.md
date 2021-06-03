@@ -21,25 +21,25 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
 * “适用于 Linux 的 Windows 子系统” 功能处于开启状态。
 
 ## 💾安装
-**[更多详情，请查看文档](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**
+**[更多详情，请查看文档](https://wsldl-pg.github.io/ArchW-docs/locale/zh-CN/How-to-Setup/)**
 ### 📁Zip
-#### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 安装 zip 文件。
+#### 1. 从 [这里](https://github.com/yuk7/ArchWSL/releases/latest) 下载发布包 zip 文件。
 
-#### 2. 将Zip里的所有文件解压到相同的目录。
-请使用一个你拥有全部访问权限的文件夹！
+#### 2. 将 zip 包中的所有文件解压到相同的目录。
+请解压进一个你拥有全部访问权限的文件夹！
 
-例如，不要放进”Program Files“。
+例如，不要放进 ”Program Files“。
 
 #### 3. 运行 Arch.exe 来释放rootfs和注册表配置到WSL。
 
-另外，EXE文件名称是用作WSL实例名称的名称。
+另外，EXE 文件的名称会同时用作你实例的名称。
 
-也就是说，如果重命名它，就可以多次安装。
+也就是说，如果重命名它，你就可以同时安装多个 ArchWSL 而不冲突。
 
 ### 📦appx
-#### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 安装器 .appx 和 .cer
-#### 2. 安装 .cer 文件到 “本地计算机” 的 "Trusted Root Certification Authorities"
-[更多详情，请查看文档](https://wsldl-pg.github.io/ArchW-docs/Install-Certificate)。
+#### 1. 从 [这里](https://github.com/yuk7/ArchWSL/releases/latest) 下载发布的 .appx 和 .cer 文件。
+#### 2. 安装 .cer 文件到 “本地计算机” 的 “受信任的根证书颁发机构”（Trusted Root Certification Authorities）。
+更多详情，请查看[文档页面](https://wsldl-pg.github.io/ArchW-docs/locale/zh-CN/Install-Certificate/)。
 
 你必须有管理员权限才能安装证书！
 #### 3. 安装 .appx 。
@@ -90,12 +90,12 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
 
 ## ⬆️更新
 ### 📁zip
-#### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 安装器 zip 文件。
-#### 2. 从 Zip 中解压 .exe 和 rootfs.tar.gz，然后覆盖你已有的文件。
+#### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 发布的 zip 文件。
+#### 2. 从 zip 包中解压 .exe 和 rootfs.tar.gz，然后覆盖你已有的文件。
 
 ### 📦appx
-#### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 安装器 .appx 文件。
-#### 2. 覆盖已有的 .appx 文件
+#### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 发布的 .appx 文件。
+#### 2. 覆盖已有的 .appx 文件。
 
 ## 🚫已知问题
-请查看 [文档](https://git.io/arch-doc).
+请查看 [文档](https://wsldl-pg.github.io/ArchW-docs/locale/zh-CN/)。
