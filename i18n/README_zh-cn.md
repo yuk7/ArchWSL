@@ -14,7 +14,7 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
 
 [English](https://github.com/yuk7/ArchWSL/blob/master/README.md)
 
-### [⬇GH下载](https://github.com/yuk7/ArchWSL/releases/latest) | [⬇镜像下载](https://gitee.com/yuk7/archwsl-mirror) | [📓文档](https://git.io/arch-doc)
+### [⬇GH下载](https://github.com/yuk7/ArchWSL/releases/latest) | [⬇镜像下载](https://gitee.com/yuk7/archwsl-mirror) | [📓文档](https://wsldl-pg.github.io/ArchW-docs/)
 
 ## 💻系统需求
 * Windows 10 1709 秋季创意者更新 64位版本，或者更新。
