@@ -10,11 +10,11 @@ com base em [wsldl](https://github.com/yuk7/wsldl)
 [![Travis (.org)](https://img.shields.io/travis/yuk7/ArchWSL-FS.svg?logo=Linux&style=flat-square)](https://travis-ci.org/yuk7/ArchWSL-FS)
 [![Github All Releases](https://img.shields.io/github/downloads/yuk7/ArchWSL/total.svg?style=flat-square)](https://github.com/yuk7/ArchWSL/releases/latest)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-![License](https://img.shields.io/github/license/yuk7/ArchWSL.svg?style=flat-square)
+[![License](https://img.shields.io/github/license/yuk7/ArchWSL.svg?style=flat-square)](https://github.com/yuk7/ArchWSL/blob/master/LICENSE)
 
-[日本語](https://github.com/yuk7/ArchWSL/blob/master/README_ja.md) | [简体中文](https://github.com/yuk7/ArchWSL/blob/master/README_zh-cn.md) | [繁體中文](https://github.com/yuk7/ArchWSL/blob/master/README_zh-tw.md)
+[日本語](./README_ja.md) | [简体中文](./README_zh-cn.md) | [繁體中文](./README_zh-tw.md) | [Español](./README_es.md)
 
-### [⬇Download](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Documentações](https://git.io/arch-doc)
+### [⬇Download](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Documentações](https://wsldl-pg.github.io/ArchW-docs/)
 
 ## 💻Requisitos
 * Windows 10 1709 Atualização de Criadores de Outono 64bit ou posterior.
@@ -96,4 +96,4 @@ Usage :
 #### 2.Sobrescreva o instalador .appx
 
 ## 🚫Problemas conhecidos
-Por favor, veja a [documentação](https://git.io/arch-doc).
+Por favor, veja a [documentação](https://wsldl-pg.github.io/ArchW-docs/).
