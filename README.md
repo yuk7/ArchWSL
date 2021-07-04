@@ -17,8 +17,7 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 ### [⬇Download](https://github.com/yuk7/ArchWSL/releases/latest) || [📓Docs](https://wsldl-pg.github.io/ArchW-docs/)
 
 ## 💻Requirements
-* Windows 10 1903 May 2019 Update x64 or later.
-* Windows 11
+* Windows 10 1903 x64 or later / Windows 11 x64
 * Windows Subsystem for Linux feature is enabled.
 * WSL2 and Linux kernel package
 
