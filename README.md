@@ -66,14 +66,14 @@ Usage :
     config [setting [value]]
       - `--default-user <user>`: Set the default user of this instance to <user>.
       - `--default-uid <uid>`: Set the default user uid of this instance to <uid>.
-      - `--append-path <on|off>`: Switch of Append Windows PATH to $PATH
-      - `--mount-drive <on|off>`: Switch of Mount drives
+      - `--append-path <true|false>`: Switch of Append Windows PATH to $PATH
+      - `--mount-drive <true|false>`: Switch of Mount drives
       - `--default-term <default|wt|flute>`: Set default type of terminal window.
 
     get [setting]
       - `--default-uid`: Get the default user uid in this instance.
-      - `--append-path`: Get on/off status of Append Windows PATH to $PATH.
-      - `--mount-drive`: Get on/off status of Mount drives.
+      - `--append-path`: Get true/false status of Append Windows PATH to $PATH.
+      - `--mount-drive`: Get true/false status of Mount drives.
       - `--wsl-version`: Get the version os the WSL (1/2) of this instance.
       - `--default-term`: Get Default Terminal type of this instance launcher.
       - `--lxguid`: Get WSL GUID key for this instance.
