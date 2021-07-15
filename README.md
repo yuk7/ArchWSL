@@ -1,6 +1,6 @@
 # ArchWSL
-ArchLinux on WSL (Windows 10 FCU or later)
-based on [wsldl](https://github.com/yuk7/wsldl)
+ArchLinux on WSL (Windows 10 FCU or later),
+based on [wsldl](https://github.com/yuk7/wsldl).
 
 
 ![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
@@ -17,9 +17,9 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 ### [⬇Download](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Docs](https://wsldl-pg.github.io/ArchW-docs/)
 
 ## 💻Requirements
-* Windows 10 1903 x64 or later / Windows 11 x64
+* Windows 10 1903 x64 or later / Windows 11 x64.
 * Windows Subsystem for Linux feature is enabled.
-* WSL2 and Linux kernel package
+* WSL2 and Linux kernel package.
 
 ## 💾Install
 **For more details, refer to [docs](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**.
