@@ -1,8 +1,8 @@
 os: Visual Studio 2017
 
 environment:
-  appx_ver: 21.7.15.0
-  wsldl_ver: 21071500
+  appx_ver: 21.7.16.0
+  wsldl_ver: 21071600
   fs_ver: 21071500
   pfx_secret:
     secure: XlXaj3gSIBd9YNKz8zuI9dtBJIoq+TTwj3HkWyyXzUTuk5b/Ur7OY2abhV9zNacetbLJKfKQSYJQLIUF9uNAFHMZoDdAKK6rq2Uzii+JB3KBaWg7w5iIfdJKD6/LD3TYjVUzQPYzEGMC45s6adk8ru3CR2kDJzhvrvqf93pL55E=
