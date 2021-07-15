@@ -61,7 +61,7 @@ Usage :
       - Run the given command line in that instance. Inherit current directory.
 
     runp <command line (includes windows path)>
-      - Runs the given command line in that instance after converting its path.
+      - Run the given command line in that instance after converting its path.
 
     config [setting [value]]
       - `--default-user <user>`: Set the default user of this instance to <user>.
@@ -77,7 +77,7 @@ Usage :
       - `--wsl-version`: Get the version os the WSL (1/2) of this instance.
       - `--default-term`: Get Default Terminal type of this instance launcher.
       - `--lxguid`: Get WSL GUID key for this instance.
-      
+
     backup [contents]
       - `--tar`: Output backup.tar to the current directory.
       - `--reg`: Output settings registry file to the current directory.
