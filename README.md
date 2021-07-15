@@ -1,6 +1,6 @@
 # ArchWSL
-ArchLinux on WSL (Windows 10 FCU or later)
-based on [wsldl](https://github.com/yuk7/wsldl)
+ArchLinux on WSL (Windows 10 FCU or later),
+based on [wsldl](https://github.com/yuk7/wsldl).
 
 
 ![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
@@ -14,34 +14,37 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 
 [日本語](i18n/README_ja.md) | [简体中文](i18n/README_zh-cn.md) | [繁體中文](i18n/README_zh-tw.md) | [Español](i18n/README_es.md) | [Português](i18n/README_pt-br.md) | [한국어](i18n/README_ko-kr.md)
 
-### [⬇Download](https://github.com/yuk7/ArchWSL/releases/latest) || [📓Docs](https://wsldl-pg.github.io/ArchW-docs/)
+### [⬇Download](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Docs](https://wsldl-pg.github.io/ArchW-docs/)
 
 ## 💻Requirements
-* Windows 10 1903 x64 or later / Windows 11 x64
+* Windows 10 1903 x64 or later / Windows 11 x64.
 * Windows Subsystem for Linux feature is enabled.
-* WSL2 and Linux kernel package
+* WSL2 and Linux kernel package.
 
 ## 💾Install
-**[For details, please refer to the docs](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**
+**For more details, refer to [docs](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**.
 ### 📁zip
-#### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip
+#### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip file.
 
-#### 2. Extract all files in zip file to same directory
-Please extract to a folder that has full access permission.
-For example 'Program Files' can not be used.
+#### 2. Extract all files in the zip file to the same directory.
+Please extract to a folder that you have full access permission.
+For example, 'Program Files' can not be used.
 
-#### 3. Run Arch.exe to Extract rootfs and Register to WSL
-Exe filename is using to the instance name to register.
-If you rename it you can register with a different name and have multiple installs.
+#### 3. Run Arch.exe to Extract rootfs and Register to WSL.
+Also, the name of the EXE file is used as the name of your WSL instance.
+That means, if you copy multiple EXE files and rename them to different names, you can have multiple different ArchWSL at the same time without conflict.
 
+#### 4. Initialize keyring of the pacman. (Optional)
+This is not required, but you will need to do this if you want to use pacman.
+See [docs](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup/#initialize-keyring).
 
 ### 📦appx
-#### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer .appx and .cer
-#### 2. Install .cer to "Trusted Root Certification Authorities" of the local machine
-[For details, please refer to the docs](https://wsldl-pg.github.io/ArchW-docs/Install-Certificate)
+#### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer appx and cer file.
+#### 2. Install cer file to "Trusted Root Certification Authorities" of the local machine.
+For more details about this, please refer to [docs](https://wsldl-pg.github.io/ArchW-docs/Install-Certificate).
 
-You need administrator privileges to install the certificate
-#### 3. Install .appx
+You'll need administrator privileges to install the certificate!
+#### 3. Double-click, install the appx file.
 
 ### 🥄 Scoop
 #### 1. `scoop bucket add extras `
@@ -55,32 +58,32 @@ Usage :
       - Open a new shell with your default settings.
 
     run <command line>
-      - Run the given command line in that distro. Inherit current directory.
+      - Run the given command line in that instance. Inherit current directory.
 
     runp <command line (includes windows path)>
-      - Run the path translated command line in that distro.
+      - Run the given command line in that instance after converting its path.
 
     config [setting [value]]
-      - `--default-user <user>`: Set the default user for this distro to <user>
-      - `--default-uid <uid>`: Set the default user uid for this distro to <uid>
+      - `--default-user <user>`: Set the default user of this instance to <user>.
+      - `--default-uid <uid>`: Set the default user uid of this instance to <uid>.
       - `--append-path <on|off>`: Switch of Append Windows PATH to $PATH
       - `--mount-drive <on|off>`: Switch of Mount drives
-      - `--default-term <default|wt|flute>`: Set default terminal window
+      - `--default-term <default|wt|flute>`: Set default type of terminal window.
 
     get [setting]
-      - `--default-uid`: Get the default user uid in this distro
-      - `--append-path`: Get on/off status of Append Windows PATH to $PATH
-      - `--mount-drive`: Get on/off status of Mount drives
-      - `--wsl-version`: Get WSL Version 1/2 for this distro
-      - `--default-term`: Get Default Terminal for this distro launcher
-      - `--lxguid`: Get WSL GUID key for this distro
+      - `--default-uid`: Get the default user uid in this instance.
+      - `--append-path`: Get on/off status of Append Windows PATH to $PATH.
+      - `--mount-drive`: Get on/off status of Mount drives.
+      - `--wsl-version`: Get the version os the WSL (1/2) of this instance.
+      - `--default-term`: Get Default Terminal type of this instance launcher.
+      - `--lxguid`: Get WSL GUID key for this instance.
 
     backup [contents]
-      - `--tar`: Output backup.tar to the current directory
-      - `--reg`: Output settings registry file to the current directory
+      - `--tar`: Output backup.tar to the current directory.
+      - `--reg`: Output settings registry file to the current directory.
 
     clean
-      - Uninstall the distro.
+      - Uninstall that instance.
 
     help
       - Print this usage message.
@@ -88,12 +91,12 @@ Usage :
 
 ## ⬆️Update
 ### 📁zip
-#### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip
-#### 2. Extract .exe and rootfs.tar.gz from .zip and overwrite existing ones.
+#### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip file.
+#### 2. Extract exe file and `rootfs.tar.gz` from zip file and overwrite your existing ones.
 
 ### 📦appx
-#### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer .appx
-#### 2.Overwrite install .appx
+#### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer appx file.
+#### 2. Double-click to install the update.
 
 ## 🚫Known issues
-Please see [docs](https://wsldl-pg.github.io/ArchW-docs/).
+See [docs](https://wsldl-pg.github.io/ArchW-docs/).
