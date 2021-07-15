@@ -92,11 +92,11 @@ Usage :
 ## ⬆️Update
 ### 📁zip
 #### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip file.
-#### 2. Extract .exe and rootfs.tar.gz from .zip and overwrite existing ones.
+#### 2. Extract exe file and `rootfs.tar.gz` from zip file and overwrite your existing ones.
 
 ### 📦appx
 #### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer appx file.
-#### 2.Overwrite installed appx file.
+#### 2. Double-click to install the update.
 
 ## 🚫Known issues
-Please see [docs](https://wsldl-pg.github.io/ArchW-docs/).
+See [docs](https://wsldl-pg.github.io/ArchW-docs/).
