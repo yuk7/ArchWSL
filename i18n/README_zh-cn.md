@@ -17,24 +17,24 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
 ### [⬇GH下载](https://github.com/yuk7/ArchWSL/releases/latest) | [⬇镜像下载](https://gitee.com/yuk7/archwsl-mirror) | [📓文档](https://wsldl-pg.github.io/ArchW-docs/)
 
 ## 💻系统需求
-* Windows 10 1709 秋季创意者更新 64位版本，或者更新。
-* “适用于 Linux 的 Windows 子系统” 功能处于开启状态。
+* Windows 10 1709 秋季创意者更新或者更高版本
+* 开启 `适用于 Linux 的 Windows 子系统` 功能
 
 ## 💾安装
 **[更多详情，请查看文档](https://wsldl-pg.github.io/ArchW-docs/locale/zh-CN/How-to-Setup/)**
 ### 📁Zip
-#### 1. 从 [这里](https://github.com/yuk7/ArchWSL/releases/latest) 下载发布包 zip 文件。
+#### 1. 下载 [[GH](https://github.com/yuk7/ArchWSL/releases/latest)/[镜像](https://gitee.com/yuk7/archwsl-mirror)] zip 安装包。
 
-#### 2. 将 zip 包中的所有文件解压到相同的目录。
-请解压进一个你拥有全部访问权限的文件夹！
+#### 2. 解压缩 zip 文件中的全部内容到相同的目录。
+请解压到一个你拥有写权限的目录。
 
-例如，不要放进 ”Program Files“。
+例如， `C:\Program Files` 就不该被使用。
 
-#### 3. 运行 Arch.exe 来释放rootfs和注册表配置到WSL。
+#### 3. 运行 `Arch.exe` 来安装 rootfs 和注册表配置。
 
-另外，EXE 文件的名称会同时用作你实例的名称。
+另外，EXE 文件的名称会同时用作你的 WSL 实例名称。
 
-也就是说，如果重命名它，你就可以同时安装多个 ArchWSL 而不冲突。
+也就是说，如果复制多个 EXE 文件，并重命名成不同的名称，你就同时拥有了多个不同的 ArchWSL 并且互不冲突。
 
 ### 📦appx
 #### 1. 从 [这里](https://github.com/yuk7/ArchWSL/releases/latest) 下载发布的 .appx 和 .cer 文件。
