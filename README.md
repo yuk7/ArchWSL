@@ -26,8 +26,8 @@ based on [wsldl](https://github.com/yuk7/wsldl).
 ### 📁zip
 #### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip file.
 
-#### 2. Extract all files in zip file to same directory.
-Please extract to a folder that you has full access permission.
+#### 2. Extract all files in the zip file to the same directory.
+Please extract to a folder that you have full access permission.
 For example, 'Program Files' can not be used.
 
 #### 3. Run Arch.exe to Extract rootfs and Register to WSL.
