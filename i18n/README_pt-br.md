@@ -17,8 +17,10 @@ com base em [wsldl](https://github.com/yuk7/wsldl)
 ### [⬇Download](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Documentações](https://wsldl-pg.github.io/ArchW-docs/)
 
 ## 💻Requisitos
-* Windows 10 1709 Atualização de Criadores de Outono 64bit ou posterior.
+
+* Windows 10 1903 x64 ou posterior / Windows 11 x64.
 * O recurso Windows Subsystem for Linux estar habilitado.
+* [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-2---check-requirements-for-running-wsl-2) e [pacote do kernel Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package) .
 
 ## 💾Instalação
 **[Para detalhes, consulte a documentação](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**
