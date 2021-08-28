@@ -17,12 +17,14 @@ based on [wsldl](https://github.com/yuk7/wsldl).
 ### [⬇Download](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Docs](https://wsldl-pg.github.io/ArchW-docs/)
 
 ## 💻Requirements
-* Windows 10 1903 x64 or later / Windows 11 x64.
+* Windows 10 1803 x64 or later / Windows 11 x64.
 * Windows Subsystem for Linux feature is enabled.
-* [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-2---check-requirements-for-running-wsl-2) and [Linux kernel package](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package) .
 
 ## 💾Install
 **For more details, refer to [docs](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**.
+
+**※IF YOU USE WSL1, YOU MUST REPLACE GLIBC PACKAGE ON THE FIRST RUN OF INSTANCE, Please refer to [docs](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**
+
 ### 📁zip
 #### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer zip file.
 
