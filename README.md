@@ -40,7 +40,7 @@ See [docs](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup/#initialize-keyrin
 
 ### 📦appx
 #### 1. [Download](https://github.com/yuk7/ArchWSL/releases/latest) installer appx and cer file.
-#### 2. Install cer file to "Trusted Root Certification Authorities" of the local machine.
+#### 2. Install cer file to "Trusted People" of the local machine.
 For more details about this, please refer to [docs](https://wsldl-pg.github.io/ArchW-docs/Install-Certificate).
 
 You'll need administrator privileges to install the certificate!
