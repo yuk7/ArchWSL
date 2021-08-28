@@ -47,7 +47,6 @@
     <Content Include="images\Wide310x150Logo.scale-200.png" />
     <Content Include="Arch.exe" />
     <Content Include="rootfs.tar.gz" />
-    <Content Include="preset.json" />
     <None Include="wsldl-AppX_TemporaryKey.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
