@@ -19,7 +19,6 @@ ziproot: Launcher.exe rootfs.tar.gz
 	mkdir ziproot
 	cp Launcher.exe ziproot/${LNCR_EXE}
 	cp rootfs.tar.gz ziproot/
-	cp preset.json ziproot/
 
 exe: Launcher.exe
 Launcher.exe: icons.zip
