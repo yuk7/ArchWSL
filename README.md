@@ -69,6 +69,7 @@ Usage :
       - `--default-uid <uid>`: Set the default user uid of this instance to <uid>.
       - `--append-path <true|false>`: Switch of Append Windows PATH to $PATH
       - `--mount-drive <true|false>`: Switch of Mount drives
+      - `--wsl-version <1|2>`: Set the WSL version of this instance to <1 or 2>
       - `--default-term <default|wt|flute>`: Set default type of terminal window.
 
     get [setting]
@@ -81,6 +82,9 @@ Usage :
 
     backup [contents]
       - `--tar`: Output backup.tar to the current directory.
+      - `--tgz`: Output backup.tar.tar to the current directory.
+      - `--vhdx`: Output backup.ext4.vhdx to the current directory. (WSL2 only)
+      - `--vhdxgz`: Output backup.ext4.vhdx.gz to the current directory. (WSL2 only)
       - `--reg`: Output settings registry file to the current directory.
 
     clean
