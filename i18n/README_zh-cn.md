@@ -18,6 +18,9 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
 
 ## 💾安装
 **[更多详情，请查看文档](https://wsldl-pg.github.io/ArchW-docs/locale/zh-CN/How-to-Setup/)**
+
+**※若你使用 WSL1 ，你将必须修改一下 glibc 包。更多详情，请查看[文档对应章节](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**
+
 ### 📁Zip
 #### 1. 下载 [[GH](https://github.com/yuk7/ArchWSL/releases/latest)/[镜像](https://gitee.com/yuk7/archwsl-mirror)] zip 安装包。
 
@@ -39,15 +42,11 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
 ### 📦appx
 #### 1. 从 [[GH](https://github.com/yuk7/ArchWSL/releases/latest)/[镜像](https://gitee.com/yuk7/archwsl-mirror)] 下载发布的 .appx 和 .cer 文件。
 
-#### 2. 安装 .cer 文件到 “本地计算机” 的 “受信任的根证书颁发机构”。
+#### 2. 安装 .cer 文件到 “本地计算机” 的 “受信任人”。
 更多详情，请查看对应[文档页面](https://wsldl-pg.github.io/ArchW-docs/locale/zh-CN/Install-Certificate/)。
 
 你必须有管理员权限才能安装证书！
 #### 3. 安装 .appx 。
-
-#### 4. 初始化 pacman keyring (可选)
-这并不是必须的，但若是你想要使用 pacman，则你需要进行此操作。
-请查看对应[文档页面](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup/#initialize-keyring)。
 
 ### 🥄 Scoop
 `scoop bucket add extras `
@@ -72,6 +71,7 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
       - `--default-uid <uid>`: 设定此实例的默认用户 UID 到 <uid>。
       - `--append-path <on|off>`: 加入 Windows PATH 到 $PATH 的开关。
       - `--mount-drive <on|off>`: 挂载驱动器的开关。
+      - `--wsl-version <1|2>`: Set the WSL version of this instance to <1 or 2>
       - `--default-term <default|wt|flute>`: 设置默认的终端窗口样式。
 
     get [setting]
@@ -83,8 +83,11 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
       - `--lxguid`: 输出此实例的 WSL GUID key。
 
     backup [contents]
-      - `--tar`: 输出 backup.tar 到当前目录。
-      - `--reg`: 输出设置注册表文件到当前目录。
+      - `--tar`: 在当前目录输出 backup.tar 文件。
+      - `--tgz`: 在当前目录输出 backup.tar.tar 文件。
+      - `--vhdx`: 在当前目录输出 backup.ext4.vhdx 文件。（仅 WSL2）
+      - `--vhdxgz`: 在当前目录输出 backup.ext4.vhdx.gz 文件。（仅 WSL2）
+      - `--reg`: 在当前目录输出注册表配置文件。
 
     clean
       - 卸载此实例。
