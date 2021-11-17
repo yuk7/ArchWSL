@@ -84,7 +84,7 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
 
     backup [contents]
       - `--tar`: 在当前目录输出 backup.tar 文件。
-      - `--tgz`: 在当前目录输出 backup.tar.tar 文件。
+      - `--tgz`: 在当前目录输出 backup.tar.gz 文件。
       - `--vhdx`: 在当前目录输出 backup.ext4.vhdx 文件。（仅 WSL2）
       - `--vhdxgz`: 在当前目录输出 backup.ext4.vhdx.gz 文件。（仅 WSL2）
       - `--reg`: 在当前目录输出注册表配置文件。
