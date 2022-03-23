@@ -48,7 +48,7 @@ Você precisa de privilégios de administrador para instalar o certificado.
 #### Uso do `.exe`
 ```dos
 Usage :
-    <nenhum argumentos>
+    <nenhum argumento>
       - Abre um novo shell com suas configurações padrão.
 
     run <linha de comando>
