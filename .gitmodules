@@ -2,3 +2,7 @@
 	path = appx
 	url = https://github.com/yuk7/ArchWSL.git
 	branch = appx
+[submodule "appx-online"]
+	path = appx-online
+	url = https://github.com/yuk7/ArchWSL.git
+	branch = appx-online

@@ -1,9 +1,9 @@
 os: Visual Studio 2017
 
 environment:
-  appx_ver: 21.8.28.0
-  wsldl_ver: 21082800
-  fs_ver: 21082800
+  appx_ver: 22.3.18.0
+  wsldl_ver: 22020900
+  fs_ver: 22021700
   pfx_secret:
     secure: XlXaj3gSIBd9YNKz8zuI9dtBJIoq+TTwj3HkWyyXzUTuk5b/Ur7OY2abhV9zNacetbLJKfKQSYJQLIUF9uNAFHMZoDdAKK6rq2Uzii+JB3KBaWg7w5iIfdJKD6/LD3TYjVUzQPYzEGMC45s6adk8ru3CR2kDJzhvrvqf93pL55E=
 
@@ -12,32 +12,46 @@ install:
   - cmd: git submodule update
   - ps: iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/secure-file/master/install.ps1'))
   - cmd: appveyor-tools\secure-file -decrypt appx\wsldl-AppX\wsldl-AppX_TemporaryKey.pfx.enc -secret %pfx_secret%
+  - cmd: appveyor-tools\secure-file -decrypt appx-online\wsldl-AppX\wsldl-AppX_TemporaryKey.pfx.enc -secret %pfx_secret%
 
 before_build:
   - ps: Invoke-WebRequest https://github.com/yuk7/wsldl/releases/download/${env:wsldl_ver}/icons.zip -OutFile icons.zip -UseBasicParsing
   - ps: Expand-Archive icons.zip -DestinationPath appx\wsldl-AppX\
+  - ps: Copy-Item appx\wsldl-AppX\Arch.exe appx-online\wsldl-AppX\Arch.exe
   - ps: Invoke-WebRequest https://github.com/yuk7/ArchWSL-FS/releases/download/${env:fs_ver}/rootfs.tar.gz -OutFile appx\wsldl-AppX\rootfs.tar.gz -UseBasicParsing
+  - ps: Move-Item preset.json appx-online\wsldl-AppX\preset.json
   - ps: $vtxt = 'Version="'+${env:appx_ver}+'"'
   - ps: $file_contents = $(Get-Content "appx\wsldl-AppX\package.appxmanifest") -replace 'Version="19.0.0.0"',$vtxt
-  - ps: $file_contents | Out-File "appx\wsldl-AppX\package.appxmanifest" -Encoding utf8 
+  - ps: $file_contents | Out-File "appx\wsldl-AppX\package.appxmanifest" -Encoding utf8
+  - ps: $file_contents = $(Get-Content "appx-online\wsldl-AppX\package.appxmanifest") -replace 'Version="19.0.0.0"',$vtxt
+  - ps: $file_contents | Out-File "appx-online\wsldl-AppX\package.appxmanifest" -Encoding utf8
 
 build_script:
   - cmd: msbuild appx\wsldl-AppX.sln /p:Configuration=Release;AppxBundle=Never
+  - cmd: msbuild appx-online\wsldl-AppX.sln /p:Configuration=Release;AppxBundle=Never
   - ps: New-Item zip -ItemType Directory
   - ps: Move-Item appx\wsldl-AppX\Arch.exe zip\Arch.exe
   - ps: Move-Item appx\wsldl-AppX\rootfs.tar.gz zip\rootfs.tar.gz
   - ps: Compress-Archive -Path zip\* -DestinationPath Arch.zip
+  - ps: New-Item zip-online -ItemType Directory
+  - ps: Move-Item appx-online\wsldl-AppX\Arch.exe zip-online\Arch.exe
+  - ps: Move-Item appx-online\wsldl-AppX\preset.json zip-online\preset.json
+  - ps: Compress-Archive -Path zip-online\* -DestinationPath Arch_Online.zip
 
 after_build:
   - ps: New-Item out -ItemType Directory
   - ps: Move-Item appx\wsldl-AppX\AppPackages\wsldl-AppX_${env:appx_ver}_x64_Test\wsldl-AppX_${env:appx_ver}_x64.appx out\ArchWSL-AppX_${env:appx_ver}_x64.appx
   - ps: Move-Item appx\wsldl-AppX\AppPackages\wsldl-AppX_${env:appx_ver}_x64_Test\wsldl-AppX_${env:appx_ver}_x64.cer out\ArchWSL-AppX_${env:appx_ver}_x64.cer
+  - ps: Move-Item appx-online\wsldl-AppX\AppPackages\wsldl-AppX_${env:appx_ver}_x64_Test\wsldl-AppX_${env:appx_ver}_x64.appx out\ArchWSL_Online-AppX_${env:appx_ver}_x64.appx
+  - ps: Move-Item appx-online\wsldl-AppX\AppPackages\wsldl-AppX_${env:appx_ver}_x64_Test\wsldl-AppX_${env:appx_ver}_x64.cer out\ArchWSL_Online-AppX_${env:appx_ver}_x64.cer
   - ps: Move-Item Arch.zip out\Arch.zip
+  - ps: Move-Item Arch_Online.zip out\Arch_Online.zip
 
 artifacts:
   - path: 'out\*.appx'
   - path: 'out\*.cer'
   - path: 'out\Arch.zip'
+  - path: 'out\Arch_Online.zip'
 
 deploy:
  - provider: GitHub
