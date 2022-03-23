@@ -48,7 +48,7 @@ Você precisa de privilégios de administrador para instalar o certificado.
 #### Uso do `.exe`
 ```dos
 Usage :
-    <sem argumentos>
+    <nenhum argumento>
       - Abre um novo shell com suas configurações padrão.
 
     run <linha de comando>
@@ -71,13 +71,17 @@ Usage :
       - `--wsl-version`: Obtém a versão 1/2 do WSL para esta distro
       - `--default-term`: Obtém Terminal Padrão para este lançador de distro
       - `--lxguid`: Obtém a chave WSL GUID desta versão
-
+      
     backup [contents]
-      - `--tar`: Exporta backup.tar para o diretório atual
+      - `--tar`: Exporta backup.tar para o diretório atual.
+      - `--tgz`: Exporta backup.tar.gz para o diretório atual.
+      - `--vhdx`: Exporta backup.ext4.vhdx para o diretório atual. (Somente WSL2)
+      - `--vhdxgz`: Exporta backup.ext4.vhdx.gz para o diretório atual. (Somente WSL2)
       - `--reg`: Exporta arquivo de registro de configurações para o diretório atual
 
+
     clean
-      - Desinstala a distro.
+      - Desinstala essa instância..
 
     help
       - Imprime esta mensagem de ajuda.
