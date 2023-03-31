@@ -7,7 +7,7 @@ WSL 위에서 돌아가는 아치 리눅스 (Windows 10 1909 이상,
 
 
 
-[English](https://github.com/yuk7/ArchWSL/blob/master/README.md)
+[English](https://github.com/yuk7/ArchWSL/blob/master/README.md) | [Deutsch](https://github.com/yuk7/ArchWSL/blob/master/README_de.md)
 
 ### [⬇다운로드](https://github.com/yuk7/ArchWSL/releases/latest) || [📓문서](https://wsldl-pg.github.io/ArchW-docs/)
 

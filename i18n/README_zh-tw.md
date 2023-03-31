@@ -5,7 +5,7 @@ WSL 的 ArchLinux 封裝，可用於 Windows 10 1709 或是更高的版本，
 
 ![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
 
-[English](https://github.com/yuk7/ArchWSL/blob/master/README.md)
+[English](https://github.com/yuk7/ArchWSL/blob/master/README.md) | [Deutsch](https://github.com/yuk7/ArchWSL/blob/master/README_de.md)
 
 ### [⬇下載](https://github.com/yuk7/ArchWSL/releases/latest) | [📓文檔](https://git.io/arch-doc)
 

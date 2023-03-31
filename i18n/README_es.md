@@ -6,7 +6,7 @@ basado en [wsldl](https://github.com/yuk7/wsldl)
 
 ![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
 
-[日本語](https://github.com/yuk7/ArchWSL/blob/master/README_ja.md) | [简体中文](https://github.com/yuk7/ArchWSL/blob/master/README_zh-cn.md) | [繁體中文](https://github.com/yuk7/ArchWSL/blob/master/README_zh-tw.md) | [Español](https://github.com/yuk7/ArchWSL/blob/master/README_es.md)
+[日本語](https://github.com/yuk7/ArchWSL/blob/master/README_ja.md) | [简体中文](https://github.com/yuk7/ArchWSL/blob/master/README_zh-cn.md) | [繁體中文](https://github.com/yuk7/ArchWSL/blob/master/README_zh-tw.md) | [Español](https://github.com/yuk7/ArchWSL/blob/master/README_es.md) | [Deutsch](https://github.com/yuk7/ArchWSL/blob/master/README_de.md)
 
 ### [⬇Descarga](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Documentación](https://git.io/arch-doc)
 
