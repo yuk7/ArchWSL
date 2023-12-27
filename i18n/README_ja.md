@@ -3,7 +3,7 @@ Arch LinuxベースのWSLディストリビューション (Windows 10 FCU以降
 
 ![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
 
-[English](https://github.com/yuk7/ArchWSL/blob/master/README.md) | [Deutsch](https://github.com/yuk7/ArchWSL/blob/master/README_de.md)
+[English](https://github.com/yuk7/ArchWSL/blob/master/README.md) | [Deutsch](i18n/README_de.md)
 
 ### [⬇Download](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Docs](https://git.io/arch-doc)
 
