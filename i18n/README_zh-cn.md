@@ -103,7 +103,7 @@ WSL 的 ArchLinux 封装，适用于 Windows 10 1709 或更高版本，
 
 ### 📦appx
 #### 1. [下载](https://github.com/yuk7/ArchWSL/releases/latest) 发布的 .appx 文件。
-#### 2. 覆盖已有的 .appx 文件。
+#### 2. 双击文件以安装更新。
 
 ## 🚫已知问题
 请查看 [文档](https://wsldl-pg.github.io/ArchW-docs/locale/zh-CN/)。
