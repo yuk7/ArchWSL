@@ -7,7 +7,7 @@ com base em [wsldl](https://github.com/yuk7/wsldl)
 
 
 
-[日本語](./README_ja.md) | [简体中文](./README_zh-cn.md) | [繁體中文](./README_zh-tw.md) | [Español](./README_es.md) | [Deutsch](https://github.com/yuk7/ArchWSL/blob/master/README_de.md)
+[日本語](./README_ja.md) | [简体中文](./README_zh-cn.md) | [繁體中文](./README_zh-tw.md) | [Español](./README_es.md) | [Deutsch](i18n/README_de.md)
 
 ### [⬇Download](https://github.com/yuk7/ArchWSL/releases/latest) | [📓Documentações](https://wsldl-pg.github.io/ArchW-docs/)
 

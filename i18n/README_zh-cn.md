@@ -19,12 +19,10 @@
 </div>
 
 ## 💻 需求
-
 - Windows 10 1709 秋季创意者更新及之后的 x64 版本，或 Windows 11 的任意版本；
 - `适用于 Linux 的 Windows 子系统` 功能已打开。
 
 ## 💾 安装
-
 **如果需要更多信息，请参考 [文档](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**。
 
 **如果你使用 WSL1，在实例的初次运行时，你必须更换其 glibc 包。详情请参考 [文档](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**。
