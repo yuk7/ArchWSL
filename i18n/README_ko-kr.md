@@ -1,92 +1,108 @@
 # ArchWSL
-WSL 위에서 돌아가는 아치 리눅스 (Windows 10 1909 이상,
-[wsldl](https://github.com/yuk7/wsldl) 기반)
 
+WSL 환경 (Windows 10 FCU 버전 이상)에서 실행되는, [wsldl](https://github.com/yuk7/wsldl) 기반의 Arch Linux 배포판입니다.
 
 ![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
 
+[English](https://github.com/yuk7/ArchWSL/blob/master/README.md) | [日本語](i18n/README_ja.md) | [简体中文](i18n/README_zh-cn.md) | [繁體中文](i18n/README_zh-tw.md) | [Español](i18n/README_es.md) | [Português](i18n/README_pt-br.md) | [Deutsch](i18n/README_de.md)
 
+### [⬇ 다운로드](https://github.com/yuk7/ArchWSL/releases/latest) | [📓 개발 문서](https://wsldl-pg.github.io/ArchW-docs/)
 
-[English](https://github.com/yuk7/ArchWSL/blob/master/README.md) | [Deutsch](i18n/README_de.md)
+## 💻 선행 조건
+* Windows 10, 1709 FCU (x64) 또는 그 이상의 버전 / Windows 11 (x64)
+* Windows 기능 켜기/끄기에서 'Linux용 Windows 하위 시스템' 기능 활성화
 
-### [⬇다운로드](https://github.com/yuk7/ArchWSL/releases/latest) || [📓문서](https://wsldl-pg.github.io/ArchW-docs/)
+## 💾 설치 방법
 
-## 💻필수사양
-* Windows 10 1903 x64 이상 / Windows 11 x64
-* WSL 기능 켜져 있기
-* WSL2, 리눅스 커널 패키지
+**자세한 내용은 [관련 문서](https://wsldl-pg.github.io/ArchW-docs/locale/ko-KR/How-to-Setup)를 참조하세요.**
 
-## 💾설치하기
-**[자세한 내용은 관련 문서를 참조해주십시오.](https://wsldl-pg.github.io/ArchW-docs/locale/ko-KR/How-to-Setup)**
-### 📁zip
-#### 1. 설치파일 zip [다운로드하기](https://github.com/yuk7/ArchWSL/releases/latest)
+### 📁 zip
 
-#### 2. zip 파일에 있는 모든 파일들을 같은 디렉토리에 압축해제하십시오.
-쓰기 권한이 있는 경로에 압축 해제 하십시오.
-예를 들어, C:\Program Files 는 사용될 수 없습니다.
+#### 1. [.zip 압축 파일](https://github.com/yuk7/ArchWSL/releases/latest)을 다운로드하세요.
 
-#### 3. Arch.exe 를 실행해 루트 파일시스템을 압축해제하고 WSL에 등록하십시오.
-`.exe`의 이름이 설치될 인스턴스의 이름입니다. 이를 이용하여 같은 배포판을 여러개 설치 가능합니다.
+#### 2. zip 파일에 포함된 모든 파일을 같은 디렉토리에 압축 해제해주세요.
 
-### 📦appx 패키지
+쓰기 권한이 있는 경로에 압축 해제해주세요.
+예를 들어, 'C:\Program Files'에는 압축 해제할 수 없습니다.
 
-#### 1. [`.appx` 와 `.cer` 를 다운로드하십시오](https://github.com/yuk7/ArchWSL/releases/latest)
-#### 2. `.cer` 파일을 기기의 "신뢰할 수 있는 루트 인증 기관" 에 설치하십시오.
-   인증서 설치를 위해서는 관리자 권한이 필요합니다.
+#### 3. Arch.exe를 실행해 루트 파일 시스템 (rootfs)을 압축 해제하고 WSL에 새로운 배포판을 등록하세요.
 
+이때, `.exe` 파일의 이름은 새로 생성할 WSL 인스턴스의 이름으로 사용되며, 이를 이용해 같은 종류의 배포판을 여러 개 설치 가능합니다.
 
-#### 3. .appx 설치하기
+### 📦 appx
+
+#### 1. [`.appx` 패키지 파일과 `.cer` 인증서 파일](https://github.com/yuk7/ArchWSL/releases/latest)을 다운로드하세요.
+
+#### 2. `.cer` 인증서 파일을 "Trusted People" 저장소에 설치하세요.
+
+자세한 내용은 [관련 문서](https://wsldl-pg.github.io/ArchW-docs/Install-Certificate)를 참조하세요.
+
+인증서 설치를 위해서는 관리자 권한이 필요합니다.
+
+#### 3. .appx 파일을 실행하여 설치를 진행하세요.
 
 ### 🥄 Scoop
-#### 1. `scoop bucket add extras `
-#### 2. `scoop install archwsl `
+#### 1. `scoop bucket add extras`
+#### 2. `scoop install archwsl`
 
-## 📝사용법(설치된 인스턴스)
-#### exe 사용법
+## 📝 사용법 (설치된 인스턴스)
+
+#### .exe 사용법
+
 ```dos
-사용법 :
-    <인수 없음>
-      - 기본 설정으로 새로운 쉘을 엽니다.
-
+Usage :
+    <no args>
+      - Open a new shell with your default settings.
 
     run <command line>
-      - 현재 디렉토리에서 주어진 명령을 실행합니다.
+      - Run the given command line in that instance. Inherit current directory.
 
-    runp <command line (실행할 디렉토리 경로)>
-      - 주어진 경로에서 명령을 실행합니다.
+    runp <command line (includes windows path)>
+      - Run the given command line in that instance after converting its path.
 
     config [setting [value]]
-      - `--default-user <user>`: 배포판의 기본 유저를 <user> 로 설정
-      - `--default-uid <uid>`: 배포판의 기본 유저 uid를 <uid> 로 설정
-      - `--append-path <on|off>`: 환경 변수 PATH 를 $PATH 에 추가하기
-      - `--mount-drive <on|off>`: 드라이브 마운트 켜기/끄기
+      - `--default-user <user>`: Set the default user of this instance to <user>.
+      - `--default-uid <uid>`: Set the default user uid of this instance to <uid>.
+      - `--append-path <true|false>`: Switch of Append Windows PATH to $PATH
+      - `--mount-drive <true|false>`: Switch of Mount drives
+      - `--wsl-version <1|2>`: Set the WSL version of this instance to <1 or 2>
+      - `--default-term <default|wt|flute>`: Set default type of terminal window.
 
     get [setting]
-      - `--default-uid`: 배포판의 기본 uid 출력
-      - `--append-path`: PATH를 $PATH에 추가했는지 확인하기
-      - `--mount-drive`: 드라이브 마운트 설정 확인하기
-      - `--lxguid`: 본 배포판의 WSL GUID 키 가져오기
+      - `--default-uid`: Get the default user uid in this instance.
+      - `--append-path`: Get true/false status of Append Windows PATH to $PATH.
+      - `--mount-drive`: Get true/false status of Mount drives.
+      - `--wsl-version`: Get the version os the WSL (1/2) of this instance.
+      - `--default-term`: Get Default Terminal type of this instance launcher.
+      - `--lxguid`: Get WSL GUID key for this instance.
 
     backup [contents]
-      - `--tar`: backup.tar을 현재 디렉토리에 생성하기
-      - `--reg`: 설정 레지스트리 파일을 현재 디렉토리에 생성하기
+      - `--tar`: Output backup.tar to the current directory.
+      - `--tgz`: Output backup.tar.gz to the current directory.
+      - `--vhdx`: Output backup.ext4.vhdx to the current directory. (WSL2 only)
+      - `--vhdxgz`: Output backup.ext4.vhdx.gz to the current directory. (WSL2 only)
+      - `--reg`: Output settings registry file to the current directory.
 
     clean
-      - 설치를 제거합니다.
+      - Uninstall that instance.
 
     help
-      - 본 사용법 메시지를 출력합니다.
-
+      - Print this usage message.
 ```
 
-## ⬆️업데이트하기
-### 📁zip
-#### 1. 설치파일 zip [다운로드하기](https://github.com/yuk7/ArchWSL/releases/latest)
-#### 2. 루트 파일시스템과 .exe를 zip파일에서 추출하고 덮어쓰십시오.
+## ⬆️ 업데이트 방법
 
-### 📦appx
-#### 1. 설치파일 .appx [다운로드하기](https://github.com/yuk7/ArchWSL/releases/latest)
-#### 2.Overwrite install .appx
+### 📁 zip
 
-## 🚫알려진 문제점
-[관련 문서](https://wsldl-pg.github.io/ArchW-docs/)를 참조해주십시오.
+#### 1. [.zip 압축 파일](https://github.com/yuk7/ArchWSL/releases/latest)을 다운로드하세요.
+
+#### 2. .exe 파일과 루트 파일 시스템 (`rootfs.tar.gz`)을 압축 해제하고, 기존 파일에 덮어쓰세요.
+
+### 📦 appx
+
+#### 1. [`.appx` 패키지 파일](https://github.com/yuk7/ArchWSL/releases/latest)을 다운로드하세요.
+
+#### 2. .appx 파일을 실행하여 업데이트를 시작하세요.
+
+## 🚫 알려진 문제점
+[관련 문서](https://wsldl-pg.github.io/ArchW-docs/)를 참조하세요.
