@@ -1,11 +1,16 @@
 # ArchWSL
-ArchLinux no WSL (Windows 10 FCU ou posterior)
+ArchLinux no WSL (Windows 10 FCU ou posteriores)
 com base em [wsldl](https://github.com/yuk7/wsldl)
 
 
 ![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
 
 
+[![AppVeyor](https://img.shields.io/appveyor/ci/yuk7/ArchWSL.svg?logo=Windows&style=flat-square)](https://ci.appveyor.com/project/yuk7/archwsl)
+[![FS-Workflows](https://img.shields.io/github/workflow/status/yuk7/ArchWSL-FS/Continuous%20Integration?logo=Linux&style=flat-square)](https://github.com/yuk7/ArchWSL-FS/actions)
+[![Github All Releases](https://img.shields.io/github/downloads/yuk7/ArchWSL/total.svg?style=flat-square)](https://github.com/yuk7/ArchWSL/releases/latest)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+[![License](https://img.shields.io/github/license/yuk7/ArchWSL.svg?style=flat-square)](https://github.com/yuk7/ArchWSL/blob/master/LICENSE)
 
 [日本語](./README_ja.md) | [简体中文](./README_zh-cn.md) | [繁體中文](./README_zh-tw.md) | [Español](./README_es.md) | [Deutsch](i18n/README_de.md)
 
@@ -13,12 +18,15 @@ com base em [wsldl](https://github.com/yuk7/wsldl)
 
 ## 💻Requisitos
 
-* Windows 10 1903 x64 ou posterior / Windows 11 x64.
-* O recurso Windows Subsystem for Linux estar habilitado.
+* Windows 10 1709 FCU x64 ou posteriores / Windows 11 x64.
+* O recurso Windows Subsystem for Linux deve estar habilitado.
 * [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-2---check-requirements-for-running-wsl-2) e [pacote do kernel Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package) .
 
 ## 💾Instalação
-**[Para detalhes, consulte a documentação](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**
+**[Para mais detalhes, consulte a documentação](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**
+
+**※SE VOCÊ USA WSL1, VOCÊ DEVE SUBSTITUIR O PACOTE GLIBC NA PRIMEIRA EXECUÇÃO DA INSTÂNCIA, Consulte [docs](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup)**
+
 ### 📁zip
 #### 1. [Baixe](https://github.com/yuk7/ArchWSL/releases/latest) o instalador zip
 
@@ -30,6 +38,9 @@ Por exemplo, 'Program Files' não pode ser usada.
 O nome do arquivo Exe está sendo usado como nome de instância para registrar.
 Se você renomeá-lo, poderá se registrar com um nome diferente e ter várias instalações.
 
+#### 4. Inicialize as chaves do pacman. (Opcional)
+Isso não é obrigatório, mas você precisará fazer isso se quiser usar o pacman.
+Vejá [docs](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup/#initialize-keyring).
 
 ### 📦appx
 #### 1. [Baixe](https://github.com/yuk7/ArchWSL/releases/latest) o instalador `.appx` e `.cer`
