@@ -3,10 +3,10 @@ ArchLinux on WSL (Windows 10 FCU or later),
 based on [wsldl](https://github.com/yuk7/wsldl).
 
 
-![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Arch_Alpine_Ubuntu.png)
+![logo](https://github.com/yuk7/ArchWSL/assets/29954265/469eff8a-e243-4087-a5fa-f8013fc99ee4)
 
 [![AppVeyor](https://img.shields.io/appveyor/ci/yuk7/ArchWSL.svg?logo=Windows&style=flat-square)](https://ci.appveyor.com/project/yuk7/archwsl)
-[![FS-Workflows](https://img.shields.io/github/workflow/status/yuk7/ArchWSL-FS/Continuous%20Integration?logo=Linux&style=flat-square)](https://github.com/yuk7/ArchWSL-FS/actions)
+[![FS-Workflows](https://img.shields.io/github/actions/workflow/status/yuk7/ArchWSL-FS/ci.yml?logo=Linux&style=flat-square)](https://github.com/yuk7/ArchWSL-FS/actions)
 [![Github All Releases](https://img.shields.io/github/downloads/yuk7/ArchWSL/total.svg?style=flat-square)](https://github.com/yuk7/ArchWSL/releases/latest)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
 [![License](https://img.shields.io/github/license/yuk7/ArchWSL.svg?style=flat-square)](https://github.com/yuk7/ArchWSL/blob/master/LICENSE)
