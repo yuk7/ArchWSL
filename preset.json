@@ -1,3 +1,4 @@
 {
-    "installfile":"https://github.com/yuk7/ArchWSL-FS/releases/download/24042800/rootfs.tar.gz"
+    "installfile":"https://github.com/yuk7/ArchWSL-FS/releases/download/25030100/rootfs.tar.gz",
+    "installfilesha256":"019f1b3b8169cbe1a2a39424e8ba493bc9a2e9c9415269663fc360ecb83bbb39"
 }

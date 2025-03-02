@@ -57,6 +57,7 @@ You'll need administrator privileges to install the certificate!
 Usage :
     <no args>
       - Open a new shell with your default settings.
+        Inherit current directory (with exception that %%USERPROFILE%% is changed to $HOME).
 
     run <command line>
       - Run the given command line in that instance. Inherit current directory.
@@ -72,20 +73,21 @@ Usage :
       - `--wsl-version <1|2>`: Set the WSL version of this instance to <1 or 2>
       - `--default-term <default|wt|flute>`: Set default type of terminal window.
 
-    get [setting]
+    get [setting [value]]
       - `--default-uid`: Get the default user uid in this instance.
       - `--append-path`: Get true/false status of Append Windows PATH to $PATH.
       - `--mount-drive`: Get true/false status of Mount drives.
       - `--wsl-version`: Get the version os the WSL (1/2) of this instance.
       - `--default-term`: Get Default Terminal type of this instance launcher.
+      - `--wt-profile-name`: Get Profile Name from Windows Terminal
       - `--lxguid`: Get WSL GUID key for this instance.
 
-    backup [contents]
-      - `--tar`: Output backup.tar to the current directory.
-      - `--tgz`: Output backup.tar.gz to the current directory.
-      - `--vhdx`: Output backup.ext4.vhdx to the current directory. (WSL2 only)
-      - `--vhdxgz`: Output backup.ext4.vhdx.gz to the current directory. (WSL2 only)
-      - `--reg`: Output settings registry file to the current directory.
+    backup [file name]
+      - `*.tar`: Output backup tar file.
+      - `*.tar.gz`: Output backup tar.gz file.
+      - `*.ext4.vhdx`: Output backup ext4.vhdx file. (WSL2 only)
+      - `*.ext4.vhdx.gz`: Output backup ext4.vhdx.gz file. (WSL2 only)
+      - `*.reg`: Output settings registry file.
 
     clean
       - Uninstall that instance.
