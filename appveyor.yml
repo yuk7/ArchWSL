@@ -46,12 +46,14 @@ after_build:
   - ps: Move-Item appx-online\wsldl-AppX\AppPackages\wsldl-AppX_${env:appx_ver}_x64_Test\wsldl-AppX_${env:appx_ver}_x64.cer out\ArchWSL_Online-AppX_${env:appx_ver}_x64.cer
   - ps: Move-Item Arch.zip out\Arch.zip
   - ps: Move-Item Arch_Online.zip out\Arch_Online.zip
+  - ps: Get-ChildItem out -File | Get-FileHash -Algorithm SHA256 | ForEach-Object { $_.hash.toLower() + "  " + ($_.path | Split-Path -Leaf) } | Tee-Object -FilePath out\sha256sums.txt
 
 artifacts:
   - path: 'out\*.appx'
   - path: 'out\*.cer'
   - path: 'out\Arch.zip'
   - path: 'out\Arch_Online.zip'
+  - path: 'out\sha256sums.txt'
 
 deploy:
  - provider: GitHub
