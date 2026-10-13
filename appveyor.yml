@@ -1,7 +1,7 @@
 os: Visual Studio 2017
 
 environment:
-  appx_ver: 26.4.2.0
+  appx_ver: 26.10.14.0
   wsldl_ver: 26032000
   fs_ver: 26091800
   pfx_secret:
